@@ -1,0 +1,1250 @@
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 1
+ 
+ PROJECT INFORMATION
+ 
+  Company Name                   = REFRENCE
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 2
+ 
+ S T O R Y   D A T A 
+ 
+ STORY       SIMILAR TO        HEIGHT   ELEVATION
+ 
+ KH          None             320.000    3040.000
+ STORY7      None             350.000    2720.000
+ STORY6      STORY7           350.000    2370.000
+ STORY5      STORY7           350.000    2020.000
+ STORY4      STORY7           350.000    1670.000
+ STORY3      STORY7           350.000    1320.000
+ STORY2      STORY7           600.000     970.000
+ STORY1      STORY7           370.000     370.000
+ BASE        None                           0.000
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 3
+ 
+ S T A T I C   L O A D   C A S E S 
+ 
+ STATIC      CASE        AUTO LAT         SELF WT    NOTIONAL    NOTIONAL
+ CASE        TYPE        LOAD          MULTIPLIER      FACTOR   DIRECTION
+ 
+ D           DEAD        N/A               1.0000
+ L           LIVE        N/A               0.0000
+ LRED        REDUCE LIVE N/A               0.0000
+ LRED05      REDUCE LIVE N/A               0.0000
+ LPART       LIVE        N/A               0.0000
+ LROOF       LIVE        N/A               0.0000
+ SNOW        SNOW        N/A               0.0000
+ MASS        OTHER       N/A               0.0000
+ EZ          OTHER       N/A               0.0000
+ EX          QUAKE       USER_COEFF        0.0000
+ EPX         QUAKE       USER_COEFF        0.0000
+ ENX         QUAKE       USER_COEFF        0.0000
+ EY          QUAKE       USER_COEFF        0.0000
+ EPY         QUAKE       USER_COEFF        0.0000
+ ENY         QUAKE       USER_COEFF        0.0000
+ DRXP        QUAKE       USER_COEFF        0.0000
+ DRXN        QUAKE       USER_COEFF        0.0000
+ DRYP        QUAKE       USER_COEFF        0.0000
+ DRYN        QUAKE       USER_COEFF        0.0000
+ SOIL        OTHER       N/A               0.0000
+ T           OTHER       N/A               0.0000
+ NDX         NOTIONAL    D                 0.0000      0.0020           X
+ NDY         NOTIONAL    D                 0.0000      0.0020           Y
+ NLX         NOTIONAL    L                 0.0000      0.0020           X
+ NLY         NOTIONAL    L                 0.0000      0.0020           Y
+ NLREDX      NOTIONAL    LRED              0.0000      0.0020           X
+ NLREDY      NOTIONAL    LRED              0.0000      0.0020           Y
+ NLRED05X    NOTIONAL    LRED05            0.0000      0.0020           X
+ NLRED05Y    NOTIONAL    LRED05            0.0000      0.0020           Y
+ NLPARTX     NOTIONAL    LPART             0.0000      0.0020           X
+ NLPARTY     NOTIONAL    LPART             0.0000      0.0020           Y
+ NLROOFX     NOTIONAL    LROOF             0.0000      0.0020           X
+ NLROOFY     NOTIONAL    LROOF             0.0000      0.0020           Y
+ NSX         NOTIONAL    SNOW              0.0000      0.0020           X
+ NSY         NOTIONAL    SNOW              0.0000      0.0020           Y
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 4
+ 
+ R E S P O N S E   S P E C T R U M   C A S E S 
+ 
+ RESP SPEC CASE: SPX
+ 
+   BASIC RESPONSE SPECTRUM DATA
+ 
+     MODAL       DIRECTION          MODAL    SPECTRUM     TYPICAL
+     COMBO       COMBO            DAMPING       ANGLE       ECCEN
+ 
+     CQC         SRSS              0.0500      0.0000      0.0000
+ 
+ 
+   RESPONSE SPECTRUM FUNCTION ASSIGNMENT DATA
+ 
+     DIRECTION   FUNCTION      SCALE FACT
+ 
+     U1          SOIL3KHZ        122.8920
+     U2          ----                 N/A
+     UZ          ----                 N/A
+ 
+ 
+ RESP SPEC CASE: SPXE
+ 
+   BASIC RESPONSE SPECTRUM DATA
+ 
+     MODAL       DIRECTION          MODAL    SPECTRUM     TYPICAL
+     COMBO       COMBO            DAMPING       ANGLE       ECCEN
+ 
+     CQC         SRSS              0.0500      0.0000      0.0500
+ 
+ 
+   RESPONSE SPECTRUM FUNCTION ASSIGNMENT DATA
+ 
+     DIRECTION   FUNCTION      SCALE FACT
+ 
+     U1          SOIL3KHZ        122.8920
+     U2          ----                 N/A
+     UZ          ----                 N/A
+ 
+ 
+ RESP SPEC CASE: SPY
+ 
+   BASIC RESPONSE SPECTRUM DATA
+ 
+     MODAL       DIRECTION          MODAL    SPECTRUM     TYPICAL
+     COMBO       COMBO            DAMPING       ANGLE       ECCEN
+ 
+     CQC         SRSS              0.0500      0.0000      0.0000
+ 
+ 
+   RESPONSE SPECTRUM FUNCTION ASSIGNMENT DATA
+ 
+     DIRECTION   FUNCTION      SCALE FACT
+ 
+     U1          ----                 N/A
+     U2          SOIL3KHZ         88.9644
+     UZ          ----                 N/A
+ 
+ 
+ RESP SPEC CASE: SPYE
+ 
+   BASIC RESPONSE SPECTRUM DATA
+ 
+     MODAL       DIRECTION          MODAL    SPECTRUM     TYPICAL
+     COMBO       COMBO            DAMPING       ANGLE       ECCEN
+ 
+     CQC         SRSS              0.0500      0.0000      0.0500
+ 
+ 
+   RESPONSE SPECTRUM FUNCTION ASSIGNMENT DATA
+ 
+     DIRECTION   FUNCTION      SCALE FACT
+ 
+     U1          ----                 N/A
+     U2          SOIL3KHZ         88.9644
+     UZ          ----                 N/A
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 5
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: EX
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: X
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: STORY7
+   Bottom Story: BASE
+  
+   C = 0.105
+   K = 1.36
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1330031.90
+  
+   V Used = 0.1050W = 139653.35
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00        0.00        0.00       0.000       0.000       0.000
+   STORY7          33922.66        0.00        0.00       0.000 -182718.654 2263557.769
+   STORY6          31090.50        0.00        0.00       0.000 -152372.469 2222474.104
+   STORY5          25013.74        0.00        0.00       0.000 -121912.164 1785024.672
+   STORY4          19309.03        0.00        0.00       0.000  -94116.025 1377548.881
+   STORY3          14226.98        0.00        0.00       0.000  -68351.763 1019281.007
+   STORY2          12519.90        0.00        0.00       0.000 -166975.996  985546.914
+   STORY1           3570.52        0.00        0.00       0.000  -12120.583  231588.376
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 6
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: DRXP
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: X + EccY
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: KH
+   Bottom Story: BASE
+  
+   C = 0.2357
+   K = 1
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1379636.81
+  
+   V Used = 0.2357W = 325180.40
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH              22598.35        0.00        0.00       0.000       0.000 -4849309.98
+   STORY7          63605.04        0.00        0.00       0.000 -342597.732 -167137.854
+   STORY6          61258.27        0.00        0.00       0.000 -300222.684  167012.012
+   STORY5          52203.37        0.00        0.00       0.000 -254429.198  135370.899
+   STORY4          43154.79        0.00        0.00       0.000 -210344.931  110959.139
+   STORY3          34606.10        0.00        0.00       0.000 -166260.664  100863.672
+   STORY2          34025.90        0.00        0.00       0.000 -453798.046  392453.456
+   STORY1          13728.58        0.00        0.00       0.000  -46603.368  -50080.571
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 7
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: DRXN
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: X - EccY
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: KH
+   Bottom Story: BASE
+  
+   C = 0.2357
+   K = 1
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1379636.81
+  
+   V Used = 0.2357W = 325180.40
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH              22598.35        0.00        0.00       0.000       0.000 -4849309.98
+   STORY7          63605.04        0.00        0.00       0.000 -342597.732 8655485.839
+   STORY6          61258.27        0.00        0.00       0.000 -300222.684 8590963.024
+   STORY5          52203.37        0.00        0.00       0.000 -254429.198 7315278.513
+   STORY4          43154.79        0.00        0.00       0.000 -210344.931 6046555.980
+   STORY3          34606.10        0.00        0.00       0.000 -166260.664 4857789.293
+   STORY2          34025.90        0.00        0.00       0.000 -453798.046 4964475.367
+   STORY1          13728.58        0.00        0.00       0.000  -46603.368 1830984.678
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 8
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: DRYP
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: Y + EccX
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: KH
+   Bottom Story: BASE
+  
+   C = 0.107
+   K = 1.34
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1379636.81
+  
+   V Used = 0.1070W = 147621.14
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00    12060.51        0.00       0.000       0.000 1824426.356
+   STORY7              0.00    32685.62        0.00  176055.561       0.000 -150264.512
+   STORY6              0.00    30039.38        0.00  147221.005       0.000 -298282.568
+   STORY5              0.00    24245.43        0.00  118167.556       0.000 -239493.518
+   STORY4              0.00    18787.30        0.00   91573.010       0.000 -185281.296
+   STORY3              0.00    13907.84        0.00   66818.463       0.000 -141976.891
+   STORY2              0.00    12314.70        0.00  164239.211       0.000 -252812.597
+   STORY1              0.00     3580.35        0.00   12153.958       0.000  -51417.563
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 9
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: DRYN
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: Y - EccX
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: KH
+   Bottom Story: BASE
+  
+   C = 0.107
+   K = 1.34
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1379636.81
+  
+   V Used = 0.1070W = 147621.14
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00    12060.51        0.00       0.000       0.000 1824426.356
+   STORY7              0.00    32685.62        0.00  176055.561       0.000-2916061.781
+   STORY6              0.00    30039.38        0.00  147221.005       0.000-2818276.125
+   STORY5              0.00    24245.43        0.00  118167.556       0.000-2273758.306
+   STORY4              0.00    18787.30        0.00   91573.010       0.000-1761647.645
+   STORY3              0.00    13907.84        0.00   66818.463       0.000-1308224.208
+   STORY2              0.00    12314.70        0.00  164239.211       0.000-1262251.069
+   STORY1              0.00     3580.35        0.00   12153.958       0.000 -350686.477
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 10
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: EPX
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: X + EccY
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: STORY7
+   Bottom Story: BASE
+  
+   C = 0.105
+   K = 1.36
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1330031.90
+  
+   V Used = 0.1050W = 139653.35
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00        0.00        0.00       0.000       0.000       0.000
+   STORY7          33922.66        0.00        0.00       0.000 -182718.654  -89140.122
+   STORY6          31090.50        0.00        0.00       0.000 -152372.469   84763.857
+   STORY5          25013.74        0.00        0.00       0.000 -121912.164   64864.251
+   STORY4          19309.03        0.00        0.00       0.000  -94116.025   49647.182
+   STORY3          14226.98        0.00        0.00       0.000  -68351.763   41466.271
+   STORY2          12519.90        0.00        0.00       0.000 -166975.996  144404.119
+   STORY1           3570.52        0.00        0.00       0.000  -12120.583  -13024.933
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 11
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: ENX
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: X - EccY
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: STORY7
+   Bottom Story: BASE
+  
+   C = 0.105
+   K = 1.36
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1330031.90
+  
+   V Used = 0.1050W = 139653.35
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00        0.00        0.00       0.000       0.000       0.000
+   STORY7          33922.66        0.00        0.00       0.000 -182718.654 4616255.660
+   STORY6          31090.50        0.00        0.00       0.000 -152372.469 4360184.351
+   STORY5          25013.74        0.00        0.00       0.000 -121912.164 3505185.093
+   STORY4          19309.03        0.00        0.00       0.000  -94116.025 2705450.580
+   STORY3          14226.98        0.00        0.00       0.000  -68351.763 1997095.744
+   STORY2          12519.90        0.00        0.00       0.000 -166975.996 1826689.708
+   STORY1           3570.52        0.00        0.00       0.000  -12120.583  476201.686
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 12
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: EY
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: Y
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: STORY7
+   Bottom Story: BASE
+  
+   C = 0.105
+   K = 1.36
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1330031.90
+  
+   V Used = 0.1050W = 139653.35
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00        0.00        0.00       0.000       0.000       0.000
+   STORY7              0.00    33922.66        0.00  182718.654       0.000-1591188.054
+   STORY6              0.00    31090.50        0.00  152372.469       0.000-1612805.670
+   STORY5              0.00    25013.74        0.00  121912.164       0.000-1296447.093
+   STORY4              0.00    19309.03        0.00   94116.025       0.000-1000497.931
+   STORY3              0.00    14226.98        0.00   68351.763       0.000 -741739.612
+   STORY2              0.00    12519.90        0.00  166975.996       0.000 -770154.899
+   STORY1              0.00     3570.52        0.00   12120.583       0.000 -200499.935
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 13
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: EPY
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: Y + EccX
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: STORY7
+   Bottom Story: BASE
+  
+   C = 0.105
+   K = 1.36
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1330031.90
+  
+   V Used = 0.1050W = 139653.35
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00        0.00        0.00       0.000       0.000       0.000
+   STORY7              0.00    33922.66        0.00  182718.654       0.000 -155951.503
+   STORY6              0.00    31090.50        0.00  152372.469       0.000 -308719.883
+   STORY5              0.00    25013.74        0.00  121912.164       0.000 -247082.821
+   STORY4              0.00    19309.03        0.00   94116.025       0.000 -190426.625
+   STORY3              0.00    14226.98        0.00   68351.763       0.000 -145234.870
+   STORY2              0.00    12519.90        0.00  166975.996       0.000 -257025.318
+   STORY1              0.00     3570.52        0.00   12120.583       0.000  -51276.371
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 14
+ 
+ A U T O   S E I S M I C   U S E R   C O E F F I C I E N T
+ Case: ENY
+ 
+ 
+ AUTO SEISMIC INPUT DATA
+ 
+   Direction: Y - EccX
+   Typical Eccentricity = 5%
+   Eccentricity Overrides: No
+  
+  
+   Top Story: STORY7
+   Bottom Story: BASE
+  
+   C = 0.105
+   K = 1.36
+ 
+ 
+ AUTO SEISMIC CALCULATION FORMULAS
+ 
+   V = C W
+ 
+ 
+ AUTO SEISMIC CALCULATION RESULTS
+ 
+   W Used = 1330031.90
+  
+   V Used = 0.1050W = 139653.35
+ 
+ 
+ AUTO SEISMIC STORY FORCES
+ 
+   STORY                 FX          FY          FZ          MX          MY          MZ
+ 
+   KH                  0.00        0.00        0.00       0.000       0.000       0.000
+   STORY7              0.00    33922.66        0.00  182718.654       0.000-3026424.605
+   STORY6              0.00    31090.50        0.00  152372.469       0.000-2916891.458
+   STORY5              0.00    25013.74        0.00  121912.164       0.000-2345811.365
+   STORY4              0.00    19309.03        0.00   94116.025       0.000-1810569.238
+   STORY3              0.00    14226.98        0.00   68351.763       0.000-1338244.355
+   STORY2              0.00    12519.90        0.00  166975.996       0.000-1283284.481
+   STORY1              0.00     3570.52        0.00   12120.583       0.000 -349723.498
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 15
+ 
+ M A S S   S O U R C E   D A T A 
+ 
+ MASS        LATERAL     LUMP MASS
+ FROM        MASS ONLY   AT STORIES
+ 
+ Loads       Yes         Yes         
+ 
+ 
+ M A S S   S O U R C E   L O A D S 
+ 
+ LOAD          MULTIPLIER
+ 
+ D                 1.0000
+ L                 0.2000
+ LRED              0.2000
+ LRED05            0.2000
+ LPART             1.0000
+ SNOW              0.2000
+ MASS              1.0000
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 16
+ 
+ D I A P H R A G M   M A S S   D A T A 
+ 
+ STORY       DIAPHRAGM         MASS-X      MASS-Y         MMI         X-M         Y-M
+ 
+ STORY7      D1             1.420E+02   1.420E+02   5.871E+07     480.576     733.388
+ STORY6      D1             1.556E+02   1.556E+02   6.579E+07     487.969     728.107
+ STORY5      D1             1.556E+02   1.556E+02   6.579E+07     487.969     728.107
+ STORY4      D1             1.556E+02   1.556E+02   6.578E+07     487.977     728.140
+ STORY3      D1             1.578E+02   1.578E+02   6.688E+07     487.976     728.977
+ STORY2      D1             2.064E+02   2.064E+02   8.640E+07     500.926     671.273
+ STORY2      D2             0.000E+00   0.000E+00   0.000E+00     627.000     312.667
+ STORY1      D1             2.226E+02   2.226E+02   9.356E+07     499.820     673.386
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 17
+ 
+ A S S E M B L E D   P O I N T   M A S S E S 
+ 
+ STORY                 UX          UY          UZ          RX          RY          RZ
+ 
+ KH             5.058E+01   5.058E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ STORY7         1.591E+02   1.591E+02   0.000E+00   0.000E+00   0.000E+00   5.871E+07
+ STORY6         1.759E+02   1.759E+02   0.000E+00   0.000E+00   0.000E+00   6.579E+07
+ STORY5         1.759E+02   1.759E+02   0.000E+00   0.000E+00   0.000E+00   6.579E+07
+ STORY4         1.758E+02   1.758E+02   0.000E+00   0.000E+00   0.000E+00   6.578E+07
+ STORY3         1.784E+02   1.784E+02   0.000E+00   0.000E+00   0.000E+00   6.688E+07
+ STORY2         2.387E+02   2.387E+02   0.000E+00   0.000E+00   0.000E+00   8.640E+07
+ STORY1         2.525E+02   2.525E+02   0.000E+00   0.000E+00   0.000E+00   9.356E+07
+ BASE           2.976E+01   2.976E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ Totals         1.437E+03   1.437E+03   0.000E+00   0.000E+00   0.000E+00   5.029E+08
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 18
+ 
+ C E N T E R S   O F   C U M U L A T I V E   M A S S   &   C E N T E R S   O F   R I G I D I T Y
+ 
+ STORY       DIAPHRAGM    /----------CENTER OF MASS----------//--CENTER OF RIGIDITY--/
+ LEVEL       NAME                MASS  ORDINATE-X  ORDINATE-Y  ORDINATE-X  ORDINATE-Y
+ 
+ STORY7      D1             1.420E+02     480.576     733.388     380.801     560.374
+ STORY6      D1             2.977E+02     484.441     730.627     382.107     564.215
+ STORY5      D1             4.533E+02     485.652     729.762     383.129     570.531
+ STORY4      D1             6.089E+02     486.247     729.347     384.681     581.240
+ STORY3      D1             7.667E+02     486.602     729.271     387.458     597.977
+ STORY2      D1             9.731E+02     489.640     716.970     391.359     614.208
+ STORY2      D2             0.000E+00       0.000       0.000     478.193     534.124
+ STORY1      D1             1.196E+03     491.536     708.856     402.718     693.294
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 19
+ 
+ M O D A L   P E R I O D S   A N D   F R E Q U E N C I E S
+ 
+ MODE                          PERIOD               FREQUENCY           CIRCULAR FREQ
+ NUMBER                        (TIME)           (CYCLES/TIME)          (RADIANS/TIME)
+ 
+ Mode 1                       2.17277                 0.46024                 2.89178
+ Mode 2                       1.74308                 0.57370                 3.60465
+ Mode 3                       1.65669                 0.60361                 3.79262
+ Mode 4                       0.68271                 1.46475                 9.20328
+ Mode 5                       0.56142                 1.78118                11.19151
+ Mode 6                       0.53931                 1.85423                11.65047
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 20
+ 
+ M O D A L   P A R T I C I P A T I N G   M A S S   R A T I O S
+ 
+ MODE                X-TRANS        Y-TRANS        Z-TRANS        RX-ROTN        RY-ROTN        RZ-ROTN
+ NUMBER          %MASS <SUM>    %MASS <SUM>    %MASS <SUM>    %MASS <SUM>    %MASS <SUM>    %MASS <SUM>
+ 
+ Mode 1          72.28 < 72>     0.36 <  0>     0.00 <  0>     0.52 <  1>    97.53 < 98>     0.96 <  1>
+ Mode 2           0.00 < 72>    47.15 < 48>     0.00 <  0>    62.42 < 63>     0.01 < 98>    26.20 < 27>
+ Mode 3           1.19 < 73>    25.87 < 73>     0.00 <  0>    36.41 < 99>     1.80 < 99>    46.31 < 73>
+ Mode 4          10.91 < 84>     0.08 < 73>     0.00 <  0>     0.01 < 99>     0.03 < 99>     0.03 < 73>
+ Mode 5           0.00 < 84>     4.82 < 78>     0.00 <  0>     0.02 < 99>     0.00 < 99>     6.22 < 80>
+ Mode 6           0.10 < 84>     6.18 < 84>     0.00 <  0>     0.01 < 99>     0.00 < 99>     4.59 < 84>
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 21
+ 
+ M O D A L   L O A D   P A R T I C I P A T I O N   R A T I O S
+ (STATIC AND DYNAMIC RATIOS ARE IN PERCENT)
+ 
+ TYPE        NAME              STATIC     DYNAMIC
+ 
+ Load        D                 0.2602      0.0000
+ Load        L                 0.0000      0.0000
+ Load        LRED              0.0892      0.0000
+ Load        LRED05            0.8770      0.0000
+ Load        LPART             0.8418      0.0000
+ Load        LROOF             0.2801      0.0000
+ Load        SNOW              0.2801      0.0000
+ Load        MASS              0.3018      0.0000
+ Load        EZ                0.0000      0.0000
+ Load        EX               99.8747     91.1171
+ Load        EPX              99.8939     92.0850
+ Load        ENX              99.8542     89.8550
+ Load        EY               99.8300     90.5203
+ Load        EPY              99.8368     90.8922
+ Load        ENY              99.8230     90.0437
+ Load        DRXP             99.9838     98.9437
+ Load        DRXN             99.9898     99.2631
+ Load        DRYP             99.9894     99.4804
+ Load        DRYN             99.9916     99.6084
+ Load        SOIL              0.0000      0.0000
+ Load        T                 0.0000      0.0000
+ Load        NDX              99.7572     87.2828
+ Load        NDY              99.7455     87.6530
+ Load        NLX               0.0000      0.0000
+ Load        NLY               0.0000      0.0000
+ Load        NLREDX           90.7173      4.0408
+ Load        NLREDY           89.2312      4.1239
+ Load        NLRED05X         99.8919     84.4448
+ Load        NLRED05Y         99.8739     83.2844
+ Load        NLPARTX          99.8208     78.9043
+ Load        NLPARTY          99.7931     78.0490
+ Load        NLROOFX          98.5622     56.5580
+ Load        NLROOFY          98.4466     55.7071
+ Load        NSX              98.5622     56.5580
+ Load        NSY              98.4466     55.7071
+ Accel       UX               99.7867     84.4793
+ Accel       UY               99.7728     84.4531
+ Accel       UZ                0.0000      0.0000
+ Accel       RX               99.9865     99.3921
+ Accel       RY               99.9878     99.3896
+ Accel       RZ               89.9691     84.2973
+ 
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 22
+ 
+ TOTAL REACTIVE FORCES (RECOVERED LOADS) AT ORIGIN
+ 
+ LOAD                  FX          FY          FZ          MX          MY          MZ
+ 
+ D              3.851E-10   4.532E-10   1.272E+06   7.908E+08  -5.414E+08   7.287E+01
+ L              0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ LRED           5.207E-12  -1.116E-10   1.166E+05   5.498E+07  -4.632E+07  -1.333E+01
+ LRED05        -2.293E-11   4.297E-10   1.119E+05   8.439E+07  -5.619E+07   4.979E+01
+ LPART         -1.654E-11   2.258E-10   7.095E+04   5.175E+07  -3.609E+07   2.562E+01
+ LROOF          1.051E-11   9.805E-11   2.001E+04   1.343E+07  -8.920E+06   1.321E+01
+ SNOW           7.079E-12   6.535E-11   1.334E+04   8.956E+06  -5.946E+06   8.806E+00
+ MASS           1.694E-11  -1.385E-10   4.412E+04   1.928E+07  -1.311E+07  -7.777E+00
+ EZ             0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ EX            -1.397E+05   7.701E-09  -1.215E-09   4.888E+05  -2.993E+08   9.109E+07
+ EPX           -1.397E+05   1.221E-08  -1.288E-09   4.148E+05  -2.994E+08   1.007E+08
+ ENX           -1.397E+05   3.212E-09  -1.259E-09   5.628E+05  -2.992E+08   8.148E+07
+ EY             3.994E-09  -1.397E+05  -1.222E-09   2.922E+08  -4.932E+05  -6.089E+07
+ EPY            6.975E-09  -1.397E+05  -1.106E-09   2.922E+08  -4.302E+05  -6.675E+07
+ ENY            1.129E-09  -1.397E+05  -1.120E-09   2.921E+08  -5.562E+05  -5.503E+07
+ DRXP          -3.252E+05   1.962E-08  -2.838E-09   1.081E+06  -6.900E+08   2.222E+08
+ DRXN          -3.252E+05   1.402E-09  -2.925E-09   1.386E+06  -6.896E+08   1.806E+08
+ DRYP           4.929E-09  -1.476E+05  -1.499E-09   3.210E+08  -5.390E+05  -6.662E+07
+ DRYN          -6.947E-10  -1.476E+05  -1.470E-09   3.209E+08  -6.609E+05  -5.524E+07
+ SOIL           0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ T              0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ NDX           -2.544E+03   6.845E-11  -1.558E-11   6.566E+03  -4.080E+06   1.582E+06
+ NDY            3.901E-11  -2.544E+03  -1.330E-11   3.985E+06  -6.605E+03  -1.082E+06
+ NLX            0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ NLY            0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ NLREDX        -2.331E+02  -9.811E-12  -5.924E-13   4.592E+02  -1.959E+05   1.100E+05
+ NLREDY        -4.855E-12  -2.331E+02  -3.020E-13   1.921E+05  -3.924E+02  -9.265E+04
+ NLRED05X      -2.239E+02   1.619E-11  -1.236E-12   4.690E+02  -4.003E+05   1.687E+05
+ NLRED05Y       1.144E-11  -2.239E+02  -1.293E-12   3.904E+05  -5.021E+02  -1.123E+05
+ NLPARTX       -1.419E+02   7.983E-12  -6.004E-13   2.463E+02  -2.141E+05   1.035E+05
+ NLPARTY        6.065E-12  -1.419E+02  -6.040E-13   2.089E+05  -2.595E+02  -7.211E+04
+ NLROOFX       -4.002E+01   3.817E-12  -5.755E-13   2.065E+02  -1.179E+05   2.685E+04
+ NLROOFY        1.743E-12  -4.002E+01  -6.537E-13   1.153E+05  -2.028E+02  -1.782E+04
+ NSX           -2.668E+01   2.555E-12  -3.766E-13   1.376E+02  -7.863E+04   1.790E+04
+ NSY            1.161E-12  -2.668E+01  -4.583E-13   7.688E+04  -1.352E+02  -1.188E+04
+ SPX            1.549E+05   1.654E+04   1.289E-09   3.463E+07   3.193E+08   1.016E+08
+ SPXE           1.549E+05   1.654E+04   1.328E-09   3.473E+07   3.194E+08   1.154E+08
+ SPY            1.198E+04   1.246E+05   1.058E-09   2.545E+08   2.429E+07   6.390E+07
+ SPYE           1.198E+04   1.246E+05   1.079E-09   2.546E+08   2.435E+07   7.024E+07
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 23
+ 
+ S T O R Y   F O R C E S
+ 
+ STORY       LOAD                   P          VX          VY           T          MX          MY
+ 
+ KH          EX             1.023E-10   7.198E-09   8.293E-09   2.010E+02   3.637E+03  -2.713E+04
+ STORY7      EX             1.428E-10  -3.392E+04   8.492E-09   2.262E+07   2.373E+04  -1.204E+07
+ STORY6      EX            -2.819E-11  -6.501E+04   7.624E-09   4.303E+07   6.510E+04  -3.565E+07
+ STORY5      EX            -3.474E-10  -9.003E+04   7.761E-09   5.946E+07   1.290E+05  -6.905E+07
+ STORY4      EX            -4.584E-10  -1.093E+05   6.414E-09   7.214E+07   2.126E+05  -1.104E+08
+ STORY3      EX            -1.131E-09  -1.236E+05   6.824E-09   8.149E+07   3.161E+05  -1.574E+08
+ STORY2      EX            -1.193E-09  -1.361E+05   7.733E-09   8.891E+07   4.567E+05  -2.458E+08
+ STORY1      EX            -1.215E-09  -1.397E+05   7.701E-09   9.109E+07   4.888E+05  -2.993E+08
+ KH          EPX           -8.117E-11   6.537E-09   1.154E-08   3.478E+02   4.180E+03  -2.639E+04
+ STORY7      EPX           -1.455E-10  -3.392E+04   1.184E-08   2.497E+07   2.412E+04  -1.204E+07
+ STORY6      EPX           -2.510E-10  -6.501E+04   1.361E-08   4.752E+07   6.249E+04  -3.566E+07
+ STORY5      EPX           -6.512E-10  -9.003E+04   1.229E-08   6.567E+07   1.187E+05  -6.908E+07
+ STORY4      EPX           -6.839E-10  -1.093E+05   9.999E-09   7.968E+07   1.893E+05  -1.104E+08
+ STORY3      EPX           -1.710E-09  -1.236E+05   1.110E-08   9.001E+07   2.771E+05  -1.575E+08
+ STORY2      EPX           -1.055E-09  -1.361E+05   1.217E-08   9.827E+07   3.906E+05  -2.459E+08
+ STORY1      EPX           -1.288E-09  -1.397E+05   1.221E-08   1.007E+08   4.148E+05  -2.994E+08
+ KH          ENX           -4.029E-10   7.809E-09   5.103E-09   5.414E+01   3.094E+03  -2.787E+04
+ STORY7      ENX            4.547E-11  -3.392E+04   3.224E-09   2.026E+07   2.334E+04  -1.204E+07
+ STORY6      ENX           -6.230E-10  -6.501E+04   4.483E-09   3.854E+07   6.772E+04  -3.564E+07
+ STORY5      ENX           -9.095E-11  -9.003E+04   2.690E-09   5.325E+07   1.393E+05  -6.902E+07
+ STORY4      ENX           -4.711E-10  -1.093E+05   2.089E-09   6.460E+07   2.359E+05  -1.103E+08
+ STORY3      ENX           -9.204E-10  -1.236E+05   2.900E-09   7.298E+07   3.551E+05  -1.574E+08
+ STORY2      ENX           -1.139E-09  -1.361E+05   3.222E-09   7.955E+07   5.228E+05  -2.457E+08
+ STORY1      ENX           -1.259E-09  -1.397E+05   3.212E-09   8.148E+07   5.628E+05  -2.992E+08
+ KH          EY            -3.746E-11   2.710E-10   7.454E-08  -1.153E+02   1.560E+04  -4.851E+03
+ STORY7      EY            -1.155E-10   1.757E-09  -3.392E+04  -1.471E+07   1.191E+07  -2.513E+04
+ STORY6      EY            -1.004E-09   2.269E-09  -6.501E+04  -2.827E+07   3.515E+07  -6.558E+04
+ STORY5      EY            -1.379E-09   3.806E-09  -9.003E+04  -3.918E+07   6.781E+07  -1.284E+05
+ STORY4      EY            -2.103E-09   3.213E-09  -1.093E+05  -4.760E+07   1.080E+08  -2.112E+05
+ STORY3      EY            -1.957E-09   3.868E-09  -1.236E+05  -5.380E+07   1.535E+08  -3.152E+05
+ STORY2      EY            -1.251E-09   4.059E-09  -1.361E+05  -5.930E+07   2.393E+08  -4.591E+05
+ STORY1      EY            -1.222E-09   3.994E-09  -1.397E+05  -6.089E+07   2.922E+08  -4.932E+05
+ KH          EPY           -1.722E-11   5.043E-10   7.264E-08  -2.049E+02   1.527E+04  -5.303E+03
+ STORY7      EPY           -1.874E-10   2.825E-09  -3.392E+04  -1.615E+07   1.191E+07  -2.477E+04
+ STORY6      EPY           -8.004E-10   3.257E-09  -6.501E+04  -3.101E+07   3.515E+07  -6.033E+04
+ STORY5      EPY           -2.190E-09   6.109E-09  -9.003E+04  -4.297E+07   6.782E+07  -1.120E+05
+ STORY4      EPY           -1.877E-09   5.614E-09  -1.093E+05  -5.220E+07   1.080E+08  -1.781E+05
+ STORY3      EPY           -1.892E-09   6.884E-09  -1.236E+05  -5.900E+07   1.536E+08  -2.683E+05
+ STORY2      EPY           -1.470E-09   7.036E-09  -1.361E+05  -6.501E+07   2.393E+08  -3.961E+05
+ STORY1      EPY           -1.106E-09   6.975E-09  -1.397E+05  -6.675E+07   2.922E+08  -4.302E+05
+ KH          ENY           -2.228E-11  -6.131E-11   7.669E-08  -2.575E+01   1.593E+04  -4.398E+03
+ STORY7      ENY           -2.979E-10   7.713E-10  -3.392E+04  -1.328E+07   1.191E+07  -2.549E+04
+ STORY6      ENY           -1.119E-09   8.754E-10  -6.501E+04  -2.553E+07   3.515E+07  -7.082E+04
+ STORY5      ENY           -2.012E-09   1.422E-09  -9.003E+04  -3.539E+07   6.781E+07  -1.447E+05
+ STORY4      ENY           -2.150E-09   7.014E-10  -1.093E+05  -4.300E+07   1.079E+08  -2.443E+05
+ STORY3      ENY           -1.586E-09   9.275E-10  -1.236E+05  -4.861E+07   1.535E+08  -3.620E+05
+ STORY2      ENY           -1.397E-09   1.093E-09  -1.361E+05  -5.360E+07   2.392E+08  -5.220E+05
+ STORY1      ENY           -1.120E-09   1.129E-09  -1.397E+05  -5.503E+07   2.921E+08  -5.562E+05
+ KH          DRXP          -4.029E-10  -2.260E+04   2.055E-08   4.850E+06   9.169E+03  -7.322E+06
+ STORY7      DRXP           9.422E-10  -8.620E+04   2.014E-08   5.167E+07   5.818E+04  -3.795E+07
+ STORY6      DRXP           3.402E-10  -1.475E+05   2.195E-08   9.610E+07   1.578E+05  -9.158E+07
+ STORY5      DRXP          -1.630E-09  -1.997E+05   1.907E-08   1.340E+08   3.052E+05  -1.658E+08
+ STORY4      DRXP          -1.324E-09  -2.428E+05   1.632E-08   1.653E+08   4.908E+05  -2.576E+08
+ STORY3      DRXP          -3.711E-09  -2.774E+05   1.837E-08   1.904E+08   7.163E+05  -3.633E+08
+ STORY2      DRXP          -2.387E-09  -3.115E+05   1.948E-08   2.129E+08   1.014E+06  -5.654E+08
+ STORY1      DRXP          -2.838E-09  -3.252E+05   1.962E-08   2.222E+08   1.081E+06  -6.900E+08
+ KH          DRXN           9.550E-12  -2.260E+04   7.428E-09   4.849E+06   7.053E+03  -7.325E+06
+ STORY7      DRXN           7.267E-10  -8.620E+04   4.853E-09   4.284E+07   5.666E+04  -3.794E+07
+ STORY6      DRXN          -4.238E-10  -1.475E+05   5.073E-09   7.885E+07   1.680E+05  -9.155E+07
+ STORY5      DRXN          -1.470E-09  -1.997E+05  -2.381E-10   1.095E+08   3.458E+05  -1.656E+08
+ STORY4      DRXN          -1.372E-09  -2.428E+05  -1.899E-11   1.349E+08   5.842E+05  -2.574E+08
+ STORY3      DRXN          -3.347E-09  -2.774E+05   8.126E-10   1.553E+08   8.744E+05  -3.630E+08
+ STORY2      DRXN          -3.041E-09  -3.115E+05   1.527E-09   1.732E+08   1.286E+06  -5.650E+08
+ STORY1      DRXN          -2.925E-09  -3.252E+05   1.402E-09   1.806E+08   1.386E+06  -6.896E+08
+ KH          DRYP           7.594E-11   5.034E-10  -1.206E+04  -1.825E+06   3.889E+06  -5.716E+03
+ STORY7      DRYP          -8.458E-11   2.232E-09  -4.475E+04  -1.738E+07   1.963E+07  -3.081E+04
+ STORY6      DRYP          -1.090E-09   2.542E-09  -7.479E+04  -3.174E+07   4.639E+07  -7.964E+04
+ STORY5      DRYP          -1.750E-09   4.792E-09  -9.903E+04  -4.334E+07   8.235E+07  -1.510E+05
+ STORY4      DRYP          -2.467E-09   3.966E-09  -1.178E+05  -5.232E+07   1.256E+08  -2.403E+05
+ STORY3      DRYP          -2.270E-09   4.849E-09  -1.317E+05  -5.896E+07   1.743E+08  -3.505E+05
+ STORY2      DRYP          -1.266E-09   4.993E-09  -1.440E+05  -6.488E+07   2.651E+08  -5.020E+05
+ STORY1      DRYP          -1.499E-09   4.929E-09  -1.476E+05  -6.662E+07   3.210E+08  -5.390E+05
+ KH          DRYN          -2.547E-11  -4.223E-10  -1.206E+04  -1.824E+06   3.889E+06  -4.842E+03
+ STORY7      DRYN          -4.366E-11   2.242E-11  -4.475E+04  -1.462E+07   1.963E+07  -3.150E+04
+ STORY6      DRYN          -1.106E-09  -1.569E-10  -7.479E+04  -2.646E+07   4.639E+07  -8.976E+04
+ STORY5      DRYN          -1.986E-09  -1.624E-10  -9.903E+04  -3.601E+07   8.234E+07  -1.826E+05
+ STORY4      DRYN          -2.379E-09  -9.863E-10  -1.178E+05  -4.342E+07   1.256E+08  -3.043E+05
+ STORY3      DRYN          -2.110E-09  -1.028E-09  -1.317E+05  -4.890E+07   1.742E+08  -4.410E+05
+ STORY2      DRYN          -1.324E-09  -6.596E-10  -1.440E+05  -5.380E+07   2.650E+08  -6.238E+05
+ STORY1      DRYN          -1.470E-09  -6.947E-10  -1.476E+05  -5.524E+07   3.209E+08  -6.609E+05
+ KH          SPX            1.387E-10   1.384E+04   2.358E+03   2.846E+06   7.618E+05   4.476E+06
+ STORY7      SPX            4.021E-10   5.095E+04   5.906E+03   2.966E+07   2.836E+06   2.254E+07
+ STORY6      SPX            2.799E-10   8.051E+04   8.783E+03   5.125E+07   5.964E+06   5.160E+07
+ STORY5      SPX            8.987E-10   1.003E+05   1.088E+04   6.569E+07   9.838E+06   8.797E+07
+ STORY4      SPX            7.238E-10   1.159E+05   1.265E+04   7.667E+07   1.428E+07   1.294E+08
+ STORY3      SPX            1.907E-09   1.316E+05   1.433E+04   8.744E+07   1.922E+07   1.752E+08
+ STORY2      SPX            1.073E-09   1.504E+05   1.612E+04   9.893E+07   2.867E+07   2.637E+08
+ STORY1      SPX            1.289E-09   1.549E+05   1.654E+04   1.016E+08   3.463E+07   3.193E+08
+ KH          SPXE           1.482E-10   1.384E+04   2.358E+03   2.847E+06   7.624E+05   4.477E+06
+ STORY7      SPXE           4.040E-10   5.095E+04   5.906E+03   3.229E+07   2.837E+06   2.254E+07
+ STORY6      SPXE           3.148E-10   8.051E+04   8.783E+03   5.605E+07   5.967E+06   5.160E+07
+ STORY5      SPXE           9.026E-10   1.003E+05   1.088E+04   7.238E+07   9.850E+06   8.800E+07
+ STORY4      SPXE           7.347E-10   1.159E+05   1.265E+04   8.547E+07   1.431E+07   1.295E+08
+ STORY3      SPXE           1.908E-09   1.316E+05   1.433E+04   9.842E+07   1.927E+07   1.753E+08
+ STORY2      SPXE           1.117E-09   1.504E+05   1.612E+04   1.122E+08   2.875E+07   2.638E+08
+ STORY1      SPXE           1.328E-09   1.549E+05   1.654E+04   1.154E+08   3.473E+07   3.194E+08
+ KH          SPY            3.052E-11   2.591E+03   1.101E+04   1.805E+06   3.545E+06   8.354E+05
+ STORY7      SPY            4.734E-10   4.263E+03   3.943E+04   1.702E+07   1.738E+07   2.196E+06
+ STORY6      SPY            7.487E-10   6.241E+03   6.347E+04   3.062E+07   3.996E+07   4.293E+06
+ STORY5      SPY            1.696E-09   7.697E+03   8.071E+04   4.045E+07   6.869E+07   6.956E+06
+ STORY4      SPY            1.945E-09   8.823E+03   9.442E+04   4.797E+07   1.019E+08   1.001E+07
+ STORY3      SPY            1.736E-09   9.974E+03   1.071E+05   5.472E+07   1.387E+08   1.339E+07
+ STORY2      SPY            1.242E-09   1.156E+04   1.212E+05   6.214E+07   2.096E+08   2.003E+07
+ STORY1      SPY            1.058E-09   1.198E+04   1.246E+05   6.390E+07   2.545E+08   2.429E+07
+ KH          SPYE           3.091E-11   2.591E+03   1.101E+04   1.805E+06   3.546E+06   8.358E+05
+ STORY7      SPYE           4.801E-10   4.263E+03   3.943E+04   1.824E+07   1.738E+07   2.197E+06
+ STORY6      SPYE           7.593E-10   6.241E+03   6.347E+04   3.290E+07   3.996E+07   4.298E+06
+ STORY5      SPYE           1.701E-09   7.697E+03   8.071E+04   4.365E+07   6.870E+07   6.970E+06
+ STORY4      SPYE           1.952E-09   8.823E+03   9.442E+04   5.214E+07   1.019E+08   1.004E+07
+ STORY3      SPYE           1.751E-09   9.974E+03   1.071E+05   5.986E+07   1.388E+08   1.344E+07
+ STORY2      SPYE           1.263E-09   1.156E+04   1.212E+05   6.825E+07   2.097E+08   2.009E+07
+ STORY1      SPYE           1.079E-09   1.198E+04   1.246E+05   7.024E+07   2.546E+08   2.435E+07
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 24
+ 
+ STORY DRIFTS
+ 
+ STORY       DIRECTION   LOAD           MAX DRIFT
+ 
+ KH          X           EX                 1/374
+ STORY7      X           EX                 1/186
+ STORY6      X           EX                 1/125
+ STORY5      X           EX                  1/95
+ STORY4      X           EX                  1/83
+ STORY3      X           EX                  1/88
+ STORY2      X           EX                 1/111
+ STORY1      X           EX                 1/325
+ KH          X           EPX                1/377
+ STORY7      X           EPX                1/171
+ STORY6      X           EPX                1/115
+ STORY5      X           EPX                 1/87
+ STORY4      X           EPX                 1/76
+ STORY3      X           EPX                 1/81
+ STORY2      X           EPX                1/102
+ STORY1      X           EPX                1/298
+ KH          X           ENX                1/371
+ STORY7      X           ENX                1/186
+ STORY6      X           ENX                1/133
+ STORY5      X           ENX                1/104
+ STORY4      X           ENX                 1/91
+ STORY3      X           ENX                 1/96
+ STORY2      X           ENX                1/120
+ STORY1      X           ENX                1/321
+ KH          Y           EY                 1/636
+ STORY7      Y           EY                 1/280
+ STORY6      Y           EY                 1/200
+ STORY5      Y           EY                 1/162
+ STORY4      Y           EY                 1/141
+ STORY3      Y           EY                 1/147
+ STORY2      Y           EY                 1/182
+ STORY1      Y           EY                 1/496
+ KH          Y           EPY                1/644
+ STORY7      Y           EPY                1/282
+ STORY6      Y           EPY                1/201
+ STORY5      Y           EPY                1/155
+ STORY4      Y           EPY                1/134
+ STORY3      Y           EPY                1/140
+ STORY2      Y           EPY                1/173
+ STORY1      Y           EPY                1/473
+ KH          Y           ENY                1/620
+ STORY7      Y           ENY                1/278
+ STORY6      Y           ENY                1/198
+ STORY5      Y           ENY                1/161
+ STORY4      Y           ENY                1/149
+ STORY3      Y           ENY                1/155
+ STORY2      Y           ENY                1/192
+ STORY1      Y           ENY                1/521
+ KH          X           DRXP               1/110
+ STORY7      X           DRXP                1/80
+ STORY6      X           DRXP                1/55
+ STORY5      X           DRXP                1/42
+ STORY4      X           DRXP                1/36
+ STORY3      X           DRXP                1/38
+ STORY2      X           DRXP                1/47
+ STORY1      X           DRXP               1/136
+ KH          X           DRXN               1/105
+ STORY7      X           DRXN                1/74
+ STORY6      X           DRXN                1/56
+ STORY5      X           DRXN                1/46
+ STORY4      X           DRXN                1/42
+ STORY3      X           DRXN                1/42
+ STORY2      X           DRXN                1/51
+ STORY1      X           DRXN               1/136
+ KH          Y           DRYP               1/336
+ STORY7      Y           DRYP               1/235
+ STORY6      Y           DRYP               1/177
+ STORY5      Y           DRYP               1/147
+ STORY4      Y           DRYP               1/129
+ STORY3      Y           DRYP               1/135
+ STORY2      Y           DRYP               1/168
+ STORY1      Y           DRYP               1/460
+ KH          Y           DRYN               1/332
+ STORY7      Y           DRYN               1/227
+ STORY6      Y           DRYN               1/172
+ STORY5      Y           DRYN               1/145
+ STORY4      Y           DRYN               1/139
+ STORY3      Y           DRYN               1/146
+ STORY2      Y           DRYN               1/179
+ STORY1      Y           DRYN               1/483
+ KH          X           SPX                1/205
+ STORY7      X           SPX                1/149
+ STORY6      X           SPX                1/106
+ STORY5      X           SPX                 1/84
+ STORY4      X           SPX                 1/75
+ STORY3      X           SPX                 1/80
+ STORY2      X           SPX                 1/98
+ STORY1      X           SPX                1/285
+ KH          X           SPXE               1/200
+ STORY7      X           SPXE               1/139
+ STORY6      X           SPXE                1/98
+ STORY5      X           SPXE                1/78
+ STORY4      X           SPXE                1/69
+ STORY3      X           SPXE                1/72
+ STORY2      X           SPXE                1/89
+ STORY1      X           SPXE               1/257
+ KH          Y           SPY                1/405
+ STORY7      Y           SPY                1/285
+ STORY6      Y           SPY                1/218
+ STORY5      Y           SPY                1/179
+ STORY4      Y           SPY                1/159
+ STORY3      Y           SPY                1/165
+ STORY2      Y           SPY                1/201
+ STORY1      Y           SPY                1/544
+ KH          Y           SPYE               1/402
+ STORY7      Y           SPYE               1/277
+ STORY6      Y           SPYE               1/215
+ STORY5      Y           SPYE               1/171
+ STORY4      Y           SPYE               1/150
+ STORY3      Y           SPYE               1/156
+ STORY2      Y           SPYE               1/190
+ STORY1      Y           SPYE               1/514
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 25
+ 
+ DISPLACEMENTS AT DIAPHRAGM CENTER OF MASS
+ 
+ STORY       DIAPHRAGM   LOAD                  UX          UY          RZ
+ 
+ STORY7      D1          EX               20.8882      0.4342    -0.00280
+ STORY6      D1          EX               19.2175      0.3431    -0.00252
+ STORY5      D1          EX               16.7645      0.2783    -0.00209
+ STORY4      D1          EX               13.5445      0.2188    -0.00151
+ STORY3      D1          EX                9.8135      0.1622    -0.00089
+ STORY2      D1          EX                6.1288      0.0851    -0.00050
+ STORY2      D2          EX                3.2227      0.0156    -0.00026
+ STORY1      D1          EX                1.1004      0.0152    -0.00004
+ STORY7      D1          EPX              21.2295      0.2318    -0.00485
+ STORY6      D1          EPX              19.5198      0.1430    -0.00441
+ STORY5      D1          EPX              17.0217      0.1047    -0.00374
+ STORY4      D1          EPX              13.7417      0.0803    -0.00284
+ STORY3      D1          EPX               9.9451      0.0641    -0.00185
+ STORY2      D1          EPX               6.1731      0.0170    -0.00110
+ STORY2      D2          EPX               3.1284     -0.0623    -0.00059
+ STORY1      D1          EPX               1.1058      0.0031    -0.00015
+ STORY7      D1          ENX              20.5469      0.6367    -0.00075
+ STORY6      D1          ENX              18.9152      0.5431    -0.00063
+ STORY5      D1          ENX              16.5072      0.4519    -0.00044
+ STORY4      D1          ENX              13.3473      0.3573    -0.00018
+ STORY3      D1          ENX               9.6818      0.2602     0.00006
+ STORY2      D1          ENX               6.0845      0.1531     0.00010
+ STORY2      D2          ENX               3.3169      0.0936     0.00006
+ STORY1      D1          ENX               1.0951      0.0273     0.00006
+ STORY7      D1          EY                0.4448     13.0181     0.00162
+ STORY6      D1          EY                0.3741     12.0049     0.00148
+ STORY5      D1          EY                0.2981     10.4564     0.00128
+ STORY4      D1          EY                0.2250      8.4321     0.00101
+ STORY3      D1          EY                0.1554      6.0979     0.00070
+ STORY2      D1          EY                0.1081      3.8561     0.00042
+ STORY2      D2          EY                0.1309      2.1320     0.00023
+ STORY1      D1          EY                0.0162      0.7128     0.00007
+ STORY7      D1          EPY               0.2366     13.1416     0.00287
+ STORY6      D1          EPY               0.1897     12.1270     0.00263
+ STORY5      D1          EPY               0.1411     10.5623     0.00228
+ STORY4      D1          EPY               0.1048      8.5166     0.00182
+ STORY3      D1          EPY               0.0751      6.1577     0.00129
+ STORY2      D1          EPY               0.0811      3.8976     0.00079
+ STORY2      D2          EPY               0.1884      2.1795     0.00043
+ STORY1      D1          EPY               0.0129      0.7202     0.00014
+ STORY7      D1          ENY               0.6529     12.8946     0.00037
+ STORY6      D1          ENY               0.5585     11.8829     0.00032
+ STORY5      D1          ENY               0.4550     10.3505     0.00027
+ STORY4      D1          ENY               0.3453      8.3476     0.00020
+ STORY3      D1          ENY               0.2357      6.0381     0.00012
+ STORY2      D1          ENY               0.1352      3.8145     0.00006
+ STORY2      D2          ENY               0.0734      2.0844     0.00003
+ STORY1      D1          ENY               0.0194      0.7055     0.00001
+ STORY7      D1          DRXP             47.8579      0.9515    -0.00718
+ STORY6      D1          DRXP             43.7961      0.6978    -0.00677
+ STORY5      D1          DRXP             38.1365      0.5303    -0.00588
+ STORY4      D1          DRXP             30.8552      0.3966    -0.00450
+ STORY3      D1          DRXP             22.4324      0.2872    -0.00288
+ STORY2      D1          DRXP             14.0350      0.1325    -0.00170
+ STORY2      D2          DRXP              7.2911     -0.0382    -0.00091
+ STORY1      D1          DRXP              2.5356      0.0233    -0.00021
+ STORY7      D1          DRXN             46.4788      1.7732     0.00115
+ STORY6      D1          DRXN             42.5688      1.5137     0.00095
+ STORY5      D1          DRXN             37.0843      1.2430     0.00091
+ STORY4      D1          DRXN             30.0409      0.9700     0.00100
+ STORY3      D1          DRXN             21.8833      0.6970     0.00111
+ STORY2      D1          DRXN             13.8497      0.4194     0.00082
+ STORY2      D2          DRXN              7.6922      0.2920     0.00047
+ STORY1      D1          DRXN              2.5133      0.0748     0.00026
+ STORY7      D1          DRYP              0.5000     14.3526     0.00186
+ STORY6      D1          DRYP              0.3994     13.0950     0.00179
+ STORY5      D1          DRYP              0.3010     11.3108     0.00160
+ STORY4      D1          DRYP              0.2176      9.0646     0.00131
+ STORY3      D1          DRYP              0.1462      6.5265     0.00094
+ STORY2      D1          DRYP              0.1091      4.1175     0.00057
+ STORY2      D2          DRYP              0.1607      2.2818     0.00031
+ STORY1      D1          DRYP              0.0164      0.7591     0.00010
+ STORY7      D1          DRYN              0.9028     14.1135    -0.00056
+ STORY6      D1          DRYN              0.7562     12.8588    -0.00045
+ STORY5      D1          DRYN              0.6048     11.1058    -0.00035
+ STORY4      D1          DRYN              0.4506      8.9010    -0.00026
+ STORY3      D1          DRYN              0.3018      6.4106    -0.00019
+ STORY2      D1          DRYN              0.1615      4.0370    -0.00013
+ STORY2      D2          DRYN              0.0491      2.1896    -0.00007
+ STORY1      D1          DRYN              0.0228      0.7448    -0.00003
+ STORY7      D1          SPX              22.4217      1.6305     0.00424
+ STORY6      D1          SPX              20.4904      1.4103     0.00394
+ STORY5      D1          SPX              17.8454      1.1948     0.00341
+ STORY4      D1          SPX              14.4838      0.9551     0.00264
+ STORY3      D1          SPX              10.5931      0.6971     0.00177
+ STORY2      D1          SPX               6.6676      0.4218     0.00107
+ STORY2      D2          SPX               3.4828      0.1618     0.00058
+ STORY1      D1          SPX               1.2083      0.0788     0.00017
+ STORY7      D1          SPXE             22.8367      1.8799     0.00677
+ STORY6      D1          SPXE             20.8611      1.6590     0.00630
+ STORY5      D1          SPXE             18.1667      1.4143     0.00550
+ STORY4      D1          SPXE             14.7375      1.1349     0.00437
+ STORY3      D1          SPXE             10.7683      0.8283     0.00305
+ STORY2      D1          SPXE              6.7270      0.5151     0.00190
+ STORY2      D2          SPXE              3.6151      0.2701     0.00103
+ STORY1      D1          SPXE              1.2155      0.0958     0.00032
+ STORY7      D1          SPY               1.2934     11.3035     0.00549
+ STORY6      D1          SPY               1.2073     10.3562     0.00508
+ STORY5      D1          SPY               1.0742      9.0066     0.00444
+ STORY4      D1          SPY               0.8855      7.2923     0.00360
+ STORY3      D1          SPY               0.6557      5.3157     0.00261
+ STORY2      D1          SPY               0.4174      3.3883     0.00164
+ STORY2      D2          SPY               0.4053      1.8911     0.00090
+ STORY1      D1          SPY               0.0794      0.6306     0.00030
+ STORY7      D1          SPYE              1.4884     11.4205     0.00668
+ STORY6      D1          SPYE              1.3815     10.4729     0.00618
+ STORY5      D1          SPYE              1.2249      9.1095     0.00542
+ STORY4      D1          SPYE              1.0041      7.3763     0.00440
+ STORY3      D1          SPYE              0.7373      5.3768     0.00320
+ STORY2      D1          SPYE              0.4450      3.4316     0.00203
+ STORY2      D2          SPYE              0.4666      1.9413     0.00111
+ STORY1      D1          SPYE              0.0827      0.6384     0.00037
+ 
+ ETABS v9.7.4  File:REV00  Units:Kgf-cm  ”Å «„»— 9, 2019 0:01  PAGE 26
+ 
+ STORY MAXIMUM AND AVERAGE LATERAL DISPLACEMENTS
+ 
+ STORY       LOAD         DIR     MAXIMUM     AVERAGE       RATIO
+ 
+ STORY7      EX             X     23.1842     21.0102       1.103
+ STORY6      EX             X     21.2988     19.3408       1.101
+ STORY5      EX             X     18.4880     16.8665       1.096
+ STORY4      EX             X     14.7927     13.6183       1.086
+ STORY3      EX             X     10.5503      9.8563       1.070
+ STORY2      EX             X      6.5698      6.1816       1.063
+ STORY1      EX             X      1.1400      1.1051       1.032
+ STORY7      EPX            X     25.2065     21.4408       1.176
+ STORY6      EPX            X     23.1637     19.7356       1.174
+ STORY5      EPX            X     20.1079     17.2044       1.169
+ STORY4      EPX            X     16.0853     13.8803       1.159
+ STORY3      EPX            X     11.4679     10.0337       1.143
+ STORY2      EPX            X      7.1418      6.2891       1.136
+ STORY1      EPX            X      1.2419      1.1218       1.107
+ STORY7      ENX            X     21.1619     20.5796       1.028
+ STORY6      ENX            X     19.4339     18.9460       1.026
+ STORY5      ENX            X     16.8681     16.5286       1.021
+ STORY4      ENX            X     13.5001     13.3564       1.011
+ STORY3      ENX            X      9.7253      9.6790       1.005
+ STORY2      ENX            X      6.1504      6.0741       1.013
+ STORY1      ENX            X      1.1386      1.0884       1.046
+ STORY7      EY             Y     13.7753     13.0075       1.059
+ STORY6      EY             Y     12.6850     11.9843       1.058
+ STORY5      EY             Y     11.0431     10.4386       1.058
+ STORY4      EY             Y      8.8965      8.4180       1.057
+ STORY3      EY             Y      6.4222      6.0880       1.055
+ STORY2      EY             Y      4.0451      3.8447       1.052
+ STORY1      EY             Y      0.7455      0.7110       1.049
+ STORY7      EPY            Y     14.4829     13.1228       1.104
+ STORY6      EPY            Y     13.3380     12.0902       1.103
+ STORY5      EPY            Y     11.6120     10.5304       1.103
+ STORY4      EPY            Y      9.3532      8.4911       1.102
+ STORY3      EPY            Y      6.7493      6.1397       1.099
+ STORY2      EPY            Y      4.2497      3.8764       1.096
+ STORY1      EPY            Y      0.7829      0.7166       1.092
+ STORY7      ENY            Y     13.0677     12.8922       1.014
+ STORY6      ENY            Y     12.0319     11.8784       1.013
+ STORY5      ENY            Y     10.4742     10.3467       1.012
+ STORY4      ENY            Y      8.4398      8.3448       1.011
+ STORY3      ENY            Y      6.0950      6.0363       1.010
+ STORY2      ENY            Y      3.8405      3.8130       1.007
+ STORY1      ENY            Y      0.7082      0.7053       1.004
+ STORY7      DRXP           X     53.7471     48.1709       1.116
+ STORY6      DRXP           X     49.3877     44.1271       1.119
+ STORY5      DRXP           X     42.9890     38.4238       1.119
+ STORY4      DRXP           X     34.5698     31.0749       1.112
+ STORY3      DRXP           X     24.8108     22.5708       1.099
+ STORY2      DRXP           X     15.5379     14.2150       1.093
+ STORY1      DRXP           X      2.7203      2.5573       1.064
+ STORY7      DRXN           X     47.3208     46.4287       1.019
+ STORY6      DRXN           X     43.2631     42.5221       1.017
+ STORY5      DRXN           X     37.7442     37.0400       1.019
+ STORY4      DRXN           X     30.7707     29.9920       1.026
+ STORY3      DRXN           X     22.6891     21.8302       1.039
+ STORY2      DRXN           X     14.4000     13.7631       1.046
+ STORY1      DRXN           X      2.6866      2.4866       1.080
+ STORY7      DRYP           Y     15.2231     14.3403       1.062
+ STORY6      DRYP           Y     13.9177     13.0700       1.065
+ STORY5      DRYP           Y     12.0482     11.2885       1.067
+ STORY4      DRYP           Y      9.6658      9.0463       1.068
+ STORY3      DRYP           Y      6.9568      6.5134       1.068
+ STORY2      DRYP           Y      4.3737      4.1021       1.066
+ STORY1      DRYP           Y      0.8046      0.7565       1.064
+ STORY7      DRYN           Y     14.3807     14.1172       1.019
+ STORY6      DRYN           Y     13.0763     12.8650       1.016
+ STORY5      DRYN           Y     11.2748     11.1106       1.015
+ STORY4      DRYN           Y      9.0282      8.9046       1.014
+ STORY3      DRYN           Y      6.5039      6.4133       1.014
+ STORY2      DRYN           Y      4.1042      4.0406       1.016
+ STORY1      DRYN           Y      0.7589      0.7455       1.018
+ STORY7      SPX            X     25.3576     22.6518       1.119
+ STORY6      SPX            X     23.2508     20.7222       1.122
+ STORY5      SPX            X     20.2192     18.0458       1.120
+ STORY4      SPX            X     16.2909     14.6389       1.113
+ STORY3      SPX            X     11.7476     10.6950       1.098
+ STORY2      SPX            X      7.3899      6.7746       1.091
+ STORY1      SPX            X      1.2960      1.2226       1.060
+ STORY7      SPXE           X     27.8507     24.6195       1.131
+ STORY6      SPXE           X     25.5699     22.5553       1.134
+ STORY5      SPXE           X     22.2690     19.6720       1.132
+ STORY4      SPXE           X     17.9722     15.9820       1.125
+ STORY3      SPXE           X     12.9793     11.6894       1.110
+ STORY2      SPXE           X      8.1754      7.3934       1.106
+ STORY1      SPXE           X      1.4385      1.3224       1.088
+ STORY7      SPY            Y     12.2597     11.5694       1.060
+ STORY6      SPY            Y     11.2551     10.5917       1.063
+ STORY5      SPY            Y      9.8071      9.2128       1.065
+ STORY4      SPY            Y      7.9422      7.4589       1.065
+ STORY3      SPY            Y      5.7798      5.4362       1.063
+ STORY2      SPY            Y      3.6679      3.4582       1.061
+ STORY1      SPY            Y      0.6797      0.6437       1.056
+ STORY7      SPYE           Y     12.9319     12.0505       1.073
+ STORY6      SPYE           Y     11.8807     11.0467       1.075
+ STORY5      SPYE           Y     10.3609      9.6190       1.077
+ STORY4      SPYE           Y      8.3976      7.7930       1.078
+ STORY3      SPYE           Y      6.1150      5.6799       1.077
+ STORY2      SPYE           Y      3.8818      3.6116       1.075
+ STORY1      SPYE           Y      0.7194      0.6714       1.072
