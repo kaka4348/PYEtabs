@@ -30,23 +30,13 @@ def vazhgooni(x, y):
             j+=1
         datacm.append(datat)
         datat=[]
-    datacm=sorted(datacm, key=lambda D : D[1], reverse=True)
-    data2 = []
-    data3 = []
-    for i in datacm:
-        for j in i:
-            if j == None:
-                continue
-            if j == 'Max':
-                continue
-            if j == 'Min':
-                continue
-            data2.append(j)
-        data3.append(data2)
-        data2 = []
-    datacm = data3
-    del data3
-    del data2
+
+    datacm = list(filter(lambda x: x[FieldsKeysIncluded.index('Diaphragm')] == 'D1', datacm))
+
+
+    xccm = float(datacm[-1][FieldsKeysIncluded.index('XCCM')])
+    yccm = float(datacm[-1][FieldsKeysIncluded.index('YCCM')])
+
 
     #================================================= W table
 
@@ -72,23 +62,7 @@ def vazhgooni(x, y):
         dataw.append(datat)
         datat=[]
 
-    data2 = []
-    data3 = []
-    for i in dataw:
-        for j in i:
-            if j == None:
-                continue
-            if j == 'Max':
-                continue
-            if j == 'Min':
-                continue
-            data2.append(j)
-        data3.append(data2)
-        data2 = []
-    dataw = data3
-    del data3
-    del data2
-
+    w = float(dataw[0][FieldsKeysIncluded.index('WeightUsed')])
 
 
     #================================================ M (active) data
@@ -116,35 +90,17 @@ def vazhgooni(x, y):
         datat=[]
 
 
-    data2 = []
-    data3 = []
-    for i in datam:
-        for j in i:
-            if j == None:
-                continue
-            if j == 'Max':
-                continue
-            if j == 'Min':
-                continue
-            data2.append(j)
-        data3.append(data2)
-        data2 = []
-    datam = data3
-    del data3
-    del data2
 
     #============================================ vazhgooni
 
-    xccm = float(datacm[-1][8])
-    yccm = float(datacm[-1][9])
-    w = float(dataw[0][13])
-    j = 0
+    mx = 0
+    my = 0
     for i in datam:
-        if datam[j][0] == 'EX':
-            my = abs(float(datam[j][6]))
-        elif datam[j][0] == 'EY':
-            mx = abs(float(datam[j][5]))
-        j += 1
+        if my < abs(float(i[FieldsKeysIncluded.index('MY')])):
+            my = abs(float(i[FieldsKeysIncluded.index('MY')]))
+        if mx < abs(float(i[FieldsKeysIncluded.index('MX')])):
+            mx = abs(float(i[FieldsKeysIncluded.index('MX')]))
+
 
     if xccm <= x - xccm: xcm = xccm
     else : xcm = x - xccm

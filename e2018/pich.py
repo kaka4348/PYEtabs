@@ -42,11 +42,12 @@ def pich():
     #تعین جهت بارهای زلزله ==================
     x_loadname = []
     y_loadname = []
+
     for i in dataload:
-        if i[2] == 'Yes' or i[3] == 'Yes' or i[4] == 'Yes':
-            x_loadname.append(i[0])
-        if i[5] == 'Yes' or i[6] == 'Yes' or i[7] == 'Yes':
-            y_loadname.append(i[0])
+        if i[FieldsKeysIncluded.index('XDir')] == 'Yes' or i[FieldsKeysIncluded.index('XDirPlusE')] == 'Yes' or i[FieldsKeysIncluded.index('XDirMinusE')] == 'Yes':
+            x_loadname.append(i[FieldsKeysIncluded.index('Name')])
+        if i[FieldsKeysIncluded.index('YDir')] == 'Yes' or i[FieldsKeysIncluded.index('YDirPlusE')] == 'Yes' or i[FieldsKeysIncluded.index('YDirMinusE')] == 'Yes':
+            y_loadname.append(i[FieldsKeysIncluded.index('Name')])
 
     # ======================================= show table data
 
@@ -76,42 +77,27 @@ def pich():
         datat = []
     #  moratab sazi bar asas onsore 2 listhaye dakheli ke bar ha hastan
     data = sorted(data, key=lambda load: load[1])
-    data2 = []
-    data3 = []
-    for i in data:
-        for j in i:
-            if j == None:
-                continue
-            if j == 'Max':
-                continue
-            if j == 'Min':
-                continue
-            data2.append(j)
-        data3.append(data2)
-        data2 = []
-    data = data3
-    del data3
-    del data2
+    data = list(filter(lambda x: x[FieldsKeysIncluded.index('Item')] == 'Diaph D1 X' or x[FieldsKeysIncluded.index('Item')] == 'Diaph D1 Y', data))
 
     #حذف نتایج بارهای زلزله در جهت مخالف مثلا وای برای ex===========
 
-    datax = list(filter(lambda x: x[1] in x_loadname and x[3] == 'Diaph D1 X', data))
-    datay = list(filter(lambda x: x[1] in y_loadname and x[3] == 'Diaph D1 Y', data))
+    datax = list(filter(lambda x: x[FieldsKeysIncluded.index('OutputCase')] in x_loadname and x[FieldsKeysIncluded.index('Item')] == 'Diaph D1 X', data))
+    datay = list(filter(lambda x: x[FieldsKeysIncluded.index('OutputCase')] in y_loadname and x[FieldsKeysIncluded.index('Item')] == 'Diaph D1 Y', data))
     data = datax+datay
-    data.sort(key=lambda x: x[1], reverse=True)
+    data.sort(key=lambda x: x[FieldsKeysIncluded.index('OutputCase')], reverse=True)
 
 
     # tedad tabaghat
-    i = 1
-    n = 1
-    while data[i][0] != data[0][0]:
-        n += 1
-        i += 1
+    storyname = []
+    for i in data:
+        storyname.append(i[FieldsKeysIncluded.index('Story')])
+    storyname = list(set(storyname))
+    n = len(storyname)
 
     # ============================================ pichesh
     pich = []
     for i in range(len(data)):
-        ratio = float(data[i][6])
+        ratio = float(data[i][FieldsKeysIncluded.index('Ratio')])
         t = ''
         if ratio <= 1.2:
             t = 'منظم پیچشی'
@@ -125,7 +111,7 @@ def pich():
         elif Aj >= 3:
             Aj = 3
         Ajst = '%.2f' % (Aj)
-        p = [data[i][0], data[i][1], data[i][3], data[i][4], data[i][5], data[i][6], Ajst, t]
+        p = [data[i][FieldsKeysIncluded.index('Story')], data[i][FieldsKeysIncluded.index('OutputCase')], data[i][FieldsKeysIncluded.index('Item')], data[i][FieldsKeysIncluded.index('Max Drift')], data[i][FieldsKeysIncluded.index('Avg Drift')], data[i][FieldsKeysIncluded.index('Ratio')], Ajst, t]
         pich.append(p)
         i += 1
     return pich

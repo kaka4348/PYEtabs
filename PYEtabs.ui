@@ -38,7 +38,7 @@
    <number>-1</number>
   </property>
   <property name="statusTip">
-   <string>PYEtabs v 99.3.1                                     telegram : @PYEtabs</string>
+   <string>PYEtabs v 99.3.2                                     telegram : @PYEtabs</string>
   </property>
   <property name="autoFillBackground">
    <bool>true</bool>
@@ -73,7 +73,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tarahi">
      <attribute name="title">

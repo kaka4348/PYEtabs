@@ -241,7 +241,7 @@ class WFP:
         if self.hangel:
             from math import radians, tan, ceil
             angel = radians(self.hangel)
-            self.delta_x = ceil(tan(angel)*self.btopb)
+            self.delta_x = round(tan(angel)*self.btopb,1)
             # self.Lptop += self.delta_x
             # self.Lpbot += self.delta_x
 

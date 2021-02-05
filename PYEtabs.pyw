@@ -1342,7 +1342,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.about.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.conntab.setCurrentIndex(2)
+        self.conntab.setCurrentIndex(1)
         self.unit.setCurrentIndex(13)
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -1350,7 +1350,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "PYEtabs"))
-        MainWindow.setStatusTip(_translate("MainWindow", "PYEtabs v 99.3.1                                     telegram : @PYEtabs"))
+        MainWindow.setStatusTip(_translate("MainWindow", "PYEtabs v 99.3.2                                     telegram : @PYEtabs"))
         self.label_2.setText(_translate("MainWindow", "Etabs 2018+"))
         self.aj.setText(_translate("MainWindow", "Aj اصلاح "))
         self.ajdyn.setText(_translate("MainWindow", "بار دینامیکی طیفی"))
@@ -2267,7 +2267,7 @@ if __name__ == "__main__":
             document.save('control.docx')
         # ==================================== export story drift
         if ui.udris.isChecked():
-            datastorydrift = sorted(datastorydrift, key=lambda load: load[2])
+            # datastorydrift = sorted(datastorydrift, key=lambda load: load[2])
             text = 'کنترل دریفت حداکثر طبقه:'
             document.add_paragraph(text, style='persian')
             document.add_paragraph()

@@ -10,7 +10,7 @@ def ajstatic(loadandratio):
 
     NumberNames = 0
     MyName = []
-    [NumberNames, MyName, ret] = SapModel.LoadPatterns.GetNameList(NumberNames,MyName)  # بدست آوردن اسم همه بارهای تعریف شده
+    [NumberNames, MyName, ret] = SapModel.LoadPatterns.GetNameList(NumberNames, MyName)  # بدست آوردن اسم همه بارهای تعریف شده
 
     LoadPatternList = MyName
     ret = SapModel.DatabaseTables.SetLoadPatternsSelectedForDisplay(LoadPatternList)  # ست کردن همه بارهای موجود برای نمایش در جدول
@@ -27,25 +27,40 @@ def ajstatic(loadandratio):
      ret] = SapModel.DatabaseTables.GetTableForDisplayArray(TableKey, FieldKeyList, GroupName, TableVersion,
                                                             FieldsKeysIncluded, NumberRecords, TableData)
 
+    # FieldsKeysIncluded1 = ['Name', 'Is Auto Load', 'X Dir?', 'X Dir Plus Ecc?', 'X Dir Minus Ecc?',
+    #                        'Y Dir?', 'Y Dir Plus Ecc?', 'Y Dir Minus Ecc?',
+    #                        'Ecc Ratio', 'Top Story', 'Bot Story', 'Ecc Overwrite Story', 'Ecc Overwrite Diaphragm', 'Ecc Overwrite Lengh m',
+    #                        'C',
+    #                        'K']  # توجه اگر اسم ستونهای موجود در جدول اصلی را اینجا نیاوریم خود برنامه مقدار پیش فرض خود را برای آن قرار میدهد اگر هم تعدا اسمهای اینجا نسبت به جدول اصلی خیلی کم باشد برنامه ایتبس قاطی میکند و جدول درست وارد نمی شود
+
     FieldsKeysIncluded1 = ['Name', 'Is Auto Load', 'X Dir?', 'X Dir Plus Ecc?', 'X Dir Minus Ecc?',
                            'Y Dir?', 'Y Dir Plus Ecc?', 'Y Dir Minus Ecc?',
-                           'Ecc Ratio', 'Top Story', 'Bot Story', 'C',
+                           'Ecc Ratio', 'Top Story', 'Bot Story',
+                           'C',
                            'K']  # توجه اگر اسم ستونهای موجود در جدول اصلی را اینجا نیاوریم خود برنامه مقدار پیش فرض خود را برای آن قرار میدهد اگر هم تعدا اسمهای اینجا نسبت به جدول اصلی خیلی کم باشد برنامه ایتبس قاطی میکند و جدول درست وارد نمی شود
-    TableData2 = list(TableData)
+
+    data = []
+    datat = []
+    len2 = len(FieldsKeysIncluded)
+    len1 = len(TableData)/len2
+    j = 0
+    for i in range(int(len1)):
+        for i in range(int(len2)):
+            datat.append(TableData[j])
+            j += 1
+        data.append(datat)
+        datat = []
+
+    for i in data:
+        if i[FieldsKeysIncluded.index('Name')] in loadandratio:
+            if i[FieldsKeysIncluded.index('XDirPlusE')] == 'Yes' or i[FieldsKeysIncluded.index('XDirMinusE')] == 'Yes' or i[FieldsKeysIncluded.index('YDirPlusE')] == 'Yes' or i[FieldsKeysIncluded.index('YDirMinusE')] == 'Yes':
+                i[FieldsKeysIncluded.index('EccRatio')] = loadandratio[i[FieldsKeysIncluded.index('Name')]]
 
     TableData1 = []
-    for i in TableData2:
-        if i == None:
-            continue
-        TableData1.append(i)
+    for i in data:
+        TableData1 += i
 
-    for i in TableData1:
-        if i in loadandratio:
-            indexx = TableData1.index(i)
-            n = indexx + 8
-            TableData1[n] = loadandratio[i]
-    ret = SapModel.DatabaseTables.SetTableForEditingArray(TableKey, TableVersion, FieldsKeysIncluded1, NumberRecords,
-                                                          TableData1)
+    ret = SapModel.DatabaseTables.SetTableForEditingArray(TableKey, TableVersion, FieldsKeysIncluded1, NumberRecords, TableData1)
 
     FillImportLog = True
     NumFatalErrors = 0
@@ -56,15 +71,6 @@ def ajstatic(loadandratio):
     [NumFatalErrors, NumErrorMsgs, NumWarnMsgs, NumInfoMsgs, ImportLog,
      ret] = SapModel.DatabaseTables.ApplyEditedTables(FillImportLog, NumFatalErrors,
                                                       NumErrorMsgs, NumWarnMsgs, NumInfoMsgs, ImportLog)
-
-    del NumberNames
-    del MyName
-    del LoadPatternList
-    del TableData2
-    del TableData
-    del FieldsKeysIncluded
-    del FieldKeyList
-    del TableData1
 
 
 def ajdynamic(loadandratio):
@@ -111,17 +117,30 @@ def aj(static, dynamic, defult):
                                                             FieldsKeysIncluded,
                                                             NumberRecords,
                                                             TableData)
-    dynamicload = []
-    dynamicload2 = []
-    j = 0
-    n = len(FieldsKeysIncluded)
-    for i in range(NumberRecords):
-        dynamicload.append(TableData[j])
-        if TableData[j+11] != '0':
-            dynamicload2.append(TableData[j])
-        j += n
+
+    data=[]
+    datat=[]
+    len2=len(FieldsKeysIncluded)
+    len1=len(TableData)/len2
+    j=0
+    for i in range(int(len1)):
+        for i in range(int(len2)):
+            datat.append(TableData[j])
+            j+=1
+        data.append(datat)
+        datat=[]
+    dynamicload = [] # همه بارهای دینامیکی
+    dynamicload2 = [] # بارهای دینامیکی با خروج از مرکزیت
+    dynamicload3 = {} # بارهای دینامیکی خروج از مرکزیت دار و جهت آنها
+    for i in data:
+        if i[0]:
+            dynamicload.append(i[FieldsKeysIncluded.index('Name')])
+            if i[FieldsKeysIncluded.index('EccenRatio')] != '0':
+                dynamicload2.append(i[FieldsKeysIncluded.index('Name')])
+                dynamicload3[i[FieldsKeysIncluded.index('Name')]] = i[FieldsKeysIncluded.index('LoadName')]
+
     # ====================================
-    Eload = []
+    Eload = [] # همه بار های زلزله استاتیکی
     NumberNames = 0
     MyType = 0
     MyName = []
@@ -131,6 +150,7 @@ def aj(static, dynamic, defult):
         if MyType == 5:  # 5 = quick
             Eload.append(i)
     # ===================================
+    #  برای وارد کردن اطلاعات از طریق دیتابیس باید همه بار ها را انتخاب کنیم و از دیتابیس استفاده کنیم والی اطلاعات دیتا بیس بهم می ریزدloadcase
     ret = SapModel.DatabaseTables.SetLoadPatternsSelectedForDisplay(Eload)
     loadcase = Eload + dynamicload
     loadcase2 = Eload + dynamicload2
@@ -168,6 +188,15 @@ def aj(static, dynamic, defult):
                     loadandratio[i[1]] = ajeccx
                 else:
                     break
+    for i in dynamicload2:
+        if dynamicload3[i] == 'U1':
+            loadandratio[i] = ajeccx
+        elif dynamicload3[i] == 'U2':
+            loadandratio[i] = ajeccy
+        else:
+            break
+
+
     if defult == True:
         for i in loadandratio:
             loadandratio[i] = '0.05'

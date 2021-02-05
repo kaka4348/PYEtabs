@@ -1,5 +1,4 @@
 def maxdrift(cdx, cdy):
-
     import comtypes.client
 
     myETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
@@ -29,54 +28,39 @@ def maxdrift(cdx, cdy):
     for i in range(int(len1)):
         for i in range(int(len2)):
             datat.append(TableData[j])
-            j+=1
+            j += 1
         data.append(datat)
         datat=[]
     #  moratab sazi bar asas onsore 2 listhaye dakheli ke bar ha hastan
-    data=sorted(data, key=lambda load : load[1])
-    data2 = []
-    data3 = []
-    for i in data:
-        for j in i:
-            if j == None:
-                continue
-            if j == 'Max':
-                continue
-            if j == 'Min':
-                continue
-            data2.append(j)
-        data3.append(data2)
-        data2 = []
-    data = data3
-    del data3
-    del data2
+    data = sorted(data, key=lambda load: load[FieldsKeysIncluded.index('OutputCase')])
+    data = list(filter(lambda x: x[FieldsKeysIncluded.index('Item')] == 'Diaph D1 X' or x[FieldsKeysIncluded.index('Item')] =='Diaph D1 Y', data))
+
+
 
     # tedad tabaghat
-    i=1
-    n=1
-    while data[i][0]!=data[0][0]:
-        n+=1
-        i+=1
+    storyname = []
+    for i in data:
+        storyname.append(i[FieldsKeysIncluded.index('Story')])
+    storyname = list(set(storyname))
+    n = len(storyname)
 
-    #============================================ max drift
-
-    drift=[]
+    #============================================ cm drift
+    drift = []
     for i in range(len(data)):
         if n <= 5:
             nn = 0.025
         else:
             nn = 0.02
-        if data[i][3][-1] == 'X':
+        if data[i][FieldsKeysIncluded.index('Item')] == 'Diaph D1 X':
             cd = cdx
-        elif data[i][3][-1] == 'Y':
+        elif data[i][FieldsKeysIncluded.index('Item')] == 'Diaph D1 Y':
             cd = cdy
         alldrift = nn/cd
-        if float(data[i][4]) <= alldrift:
+        if float(data[i][FieldsKeysIncluded.index('Max Drift')]) <= alldrift:
             ok = 'ok'
         else:
             ok = 'not ok'
-        p=[data[i][0], data[i][1], data[i][3], data[i][4],'%.6f'%(alldrift), ok]
+        p = [data[i][FieldsKeysIncluded.index('Story')], data[i][FieldsKeysIncluded.index('OutputCase')], data[i][FieldsKeysIncluded.index('Item')], data[i][FieldsKeysIncluded.index('Max Drift')], '%.6f'%(alldrift), ok]
         drift.append(p)
-        i+=1
+        i += 1
     return drift
-
