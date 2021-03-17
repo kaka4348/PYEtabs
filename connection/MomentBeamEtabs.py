@@ -268,7 +268,15 @@ def MomentBeam():
         StrainAtHardening, StrainAtMaxStress, StrainAtRupture,
         FinalSlope)
         Ry = EFy/Fy
-        return {'material': Namematerial, 'Fy': Fy, 'Fu': Fu, 'Ry': Ry}
+
+        # Namematerial = '' #input
+        E = 0
+        U = 0
+        A = 0
+        G = 0
+        [E, U, A, G, ret] = SapModel.PropMaterial.GetMPIsotropic(Namematerial, E, U, A, G)
+
+        return {'material': Namematerial, 'Fy': Fy, 'Fu': Fu, 'E':E, 'Ry': Ry}
 
 
     NumberNames = 0

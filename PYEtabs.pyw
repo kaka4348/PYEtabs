@@ -778,7 +778,7 @@ class Ui_MainWindow(object):
         self.label_35.setScaledContents(True)
         self.label_35.setObjectName("label_35")
         self.formLayoutWidget_3 = QtWidgets.QWidget(self.tab_4)
-        self.formLayoutWidget_3.setGeometry(QtCore.QRect(40, 60, 141, 213))
+        self.formLayoutWidget_3.setGeometry(QtCore.QRect(40, 60, 141, 244))
         self.formLayoutWidget_3.setObjectName("formLayoutWidget_3")
         self.formLayout_2 = QtWidgets.QFormLayout(self.formLayoutWidget_3)
         self.formLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -896,6 +896,24 @@ class Ui_MainWindow(object):
         self.label_23.setFont(font)
         self.label_23.setObjectName("label_23")
         self.formLayout_2.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_23)
+        self.label_45 = QtWidgets.QLabel(self.formLayoutWidget_3)
+        self.label_45.setMaximumSize(QtCore.QSize(21, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_45.setFont(font)
+        self.label_45.setObjectName("label_45")
+        self.formLayout_2.setWidget(7, QtWidgets.QFormLayout.LabelRole, self.label_45)
+        self.navard = QtWidgets.QDoubleSpinBox(self.formLayoutWidget_3)
+        self.navard.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.navard.setDecimals(0)
+        self.navard.setMaximum(1.0)
+        self.navard.setSingleStep(1.0)
+        self.navard.setProperty("value", 0.0)
+        self.navard.setObjectName("navard")
+        self.formLayout_2.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.navard)
         self.verticalLayoutWidget = QtWidgets.QWidget(self.tab_4)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(180, 60, 32, 181))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
@@ -969,87 +987,20 @@ class Ui_MainWindow(object):
         self.tab_5 = QtWidgets.QWidget()
         self.tab_5.setObjectName("tab_5")
         self.gridLayoutWidget_2 = QtWidgets.QWidget(self.tab_5)
-        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(130, 110, 228, 238))
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(30, 110, 221, 213))
         self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.label_22 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        font = QtGui.QFont()
-        font.setFamily("GreekC")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_22.setFont(font)
-        self.label_22.setObjectName("label_22")
-        self.gridLayout_2.addWidget(self.label_22, 6, 0, 1, 1)
-        self.label_45 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_45.setMaximumSize(QtCore.QSize(20, 16777215))
+        self.label_105 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_105.setMaximumSize(QtCore.QSize(50, 16777215))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
-        self.label_45.setFont(font)
-        self.label_45.setObjectName("label_45")
-        self.gridLayout_2.addWidget(self.label_45, 0, 0, 1, 1)
-        self.fu = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
-        self.fu.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.fu.setDecimals(0)
-        self.fu.setMaximum(100000000.0)
-        self.fu.setProperty("value", 3700.0)
-        self.fu.setObjectName("fu")
-        self.gridLayout_2.addWidget(self.fu, 1, 1, 1, 1)
-        self.label_46 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_46.setMaximumSize(QtCore.QSize(100, 16777215))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_46.setFont(font)
-        self.label_46.setObjectName("label_46")
-        self.gridLayout_2.addWidget(self.label_46, 0, 2, 1, 1)
-        self.label_52 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_52.setMaximumSize(QtCore.QSize(50, 16777215))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_52.setFont(font)
-        self.label_52.setObjectName("label_52")
-        self.gridLayout_2.addWidget(self.label_52, 3, 0, 1, 1)
-        self.label_47 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_47.setMaximumSize(QtCore.QSize(20, 16777215))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_47.setFont(font)
-        self.label_47.setObjectName("label_47")
-        self.gridLayout_2.addWidget(self.label_47, 1, 0, 1, 1)
-        self.fy = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
-        self.fy.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.fy.setToolTip("")
-        self.fy.setDecimals(0)
-        self.fy.setMaximum(100000000.0)
-        self.fy.setProperty("value", 2400.0)
-        self.fy.setObjectName("fy")
-        self.gridLayout_2.addWidget(self.fy, 0, 1, 1, 1)
-        self.label_48 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_48.setMaximumSize(QtCore.QSize(100, 16777215))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_48.setFont(font)
-        self.label_48.setObjectName("label_48")
-        self.gridLayout_2.addWidget(self.label_48, 1, 2, 1, 1)
-        self.fueg = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
-        self.fueg.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.fueg.setDecimals(0)
-        self.fueg.setMaximum(100000000.0)
-        self.fueg.setProperty("value", 4900.0)
-        self.fueg.setObjectName("fueg")
-        self.gridLayout_2.addWidget(self.fueg, 4, 1, 1, 1)
+        self.label_105.setFont(font)
+        self.label_105.setObjectName("label_105")
+        self.gridLayout_2.addWidget(self.label_105, 5, 0, 1, 1)
         self.label_53 = QtWidgets.QLabel(self.gridLayoutWidget_2)
         self.label_53.setMaximumSize(QtCore.QSize(50, 16777215))
         font = QtGui.QFont()
@@ -1058,32 +1009,46 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_53.setFont(font)
         self.label_53.setObjectName("label_53")
-        self.gridLayout_2.addWidget(self.label_53, 4, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.label_53, 1, 0, 1, 1)
         self.fue = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
         self.fue.setMaximumSize(QtCore.QSize(100, 16777215))
         self.fue.setDecimals(0)
         self.fue.setMaximum(100000000.0)
         self.fue.setProperty("value", 4200.0)
         self.fue.setObjectName("fue")
-        self.gridLayout_2.addWidget(self.fue, 3, 1, 1, 1)
-        self.label_54 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_54.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.gridLayout_2.addWidget(self.fue, 0, 1, 1, 1)
+        self.fueg = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
+        self.fueg.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.fueg.setDecimals(0)
+        self.fueg.setMaximum(100000000.0)
+        self.fueg.setProperty("value", 4900.0)
+        self.fueg.setObjectName("fueg")
+        self.gridLayout_2.addWidget(self.fueg, 1, 1, 1, 1)
+        self.label_61 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_61.setMaximumSize(QtCore.QSize(100, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_61.setFont(font)
+        self.label_61.setObjectName("label_61")
+        self.gridLayout_2.addWidget(self.label_61, 4, 2, 1, 1)
+        self.label_59 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_59.setMaximumSize(QtCore.QSize(50, 16777215))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
-        self.label_54.setFont(font)
-        self.label_54.setObjectName("label_54")
-        self.gridLayout_2.addWidget(self.label_54, 3, 2, 1, 1)
-        self.label_55 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_55.setMaximumSize(QtCore.QSize(100, 16777215))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_55.setFont(font)
-        self.label_55.setObjectName("label_55")
-        self.gridLayout_2.addWidget(self.label_55, 4, 2, 1, 1)
+        self.label_59.setFont(font)
+        self.label_59.setObjectName("label_59")
+        self.gridLayout_2.addWidget(self.label_59, 4, 0, 1, 1)
+        self.fub = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
+        self.fub.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.fub.setDecimals(0)
+        self.fub.setMaximum(100000000.0)
+        self.fub.setProperty("value", 10000.0)
+        self.fub.setObjectName("fub")
+        self.gridLayout_2.addWidget(self.fub, 4, 1, 1, 1)
         self.betaw = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
         self.betaw.setMaximumSize(QtCore.QSize(100, 16777215))
         self.betaw.setDecimals(2)
@@ -1091,6 +1056,24 @@ class Ui_MainWindow(object):
         self.betaw.setProperty("value", 0.75)
         self.betaw.setObjectName("betaw")
         self.gridLayout_2.addWidget(self.betaw, 6, 1, 1, 1)
+        self.label_55 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_55.setMaximumSize(QtCore.QSize(100, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_55.setFont(font)
+        self.label_55.setObjectName("label_55")
+        self.gridLayout_2.addWidget(self.label_55, 1, 2, 1, 1)
+        self.label_54 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_54.setMaximumSize(QtCore.QSize(100, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_54.setFont(font)
+        self.label_54.setObjectName("label_54")
+        self.gridLayout_2.addWidget(self.label_54, 0, 2, 1, 1)
         self.label_56 = QtWidgets.QLabel(self.gridLayoutWidget_2)
         self.label_56.setMaximumSize(QtCore.QSize(50, 16777215))
         font = QtGui.QFont()
@@ -1100,6 +1083,15 @@ class Ui_MainWindow(object):
         self.label_56.setFont(font)
         self.label_56.setObjectName("label_56")
         self.gridLayout_2.addWidget(self.label_56, 7, 0, 1, 1)
+        self.label_52 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_52.setMaximumSize(QtCore.QSize(50, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_52.setFont(font)
+        self.label_52.setObjectName("label_52")
+        self.gridLayout_2.addWidget(self.label_52, 0, 0, 1, 1)
         self.phikh = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
         self.phikh.setMaximumSize(QtCore.QSize(100, 16777215))
         self.phikh.setDecimals(2)
@@ -1107,22 +1099,184 @@ class Ui_MainWindow(object):
         self.phikh.setProperty("value", 1.05)
         self.phikh.setObjectName("phikh")
         self.gridLayout_2.addWidget(self.phikh, 7, 1, 1, 1)
-        self.label_51 = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        self.label_51.setMaximumSize(QtCore.QSize(20, 16777215))
+        self.label_22 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        font = QtGui.QFont()
+        font.setFamily("GreekC")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_22.setFont(font)
+        self.label_22.setObjectName("label_22")
+        self.gridLayout_2.addWidget(self.label_22, 6, 0, 1, 1)
+        self.v_condition = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
+        self.v_condition.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.v_condition.setDecimals(0)
+        self.v_condition.setMaximum(1.0)
+        self.v_condition.setSingleStep(1.0)
+        self.v_condition.setProperty("value", 0.0)
+        self.v_condition.setObjectName("v_condition")
+        self.gridLayout_2.addWidget(self.v_condition, 5, 1, 1, 1)
+        self.label_62 = QtWidgets.QLabel(self.gridLayoutWidget_2)
+        self.label_62.setMaximumSize(QtCore.QSize(50, 16777215))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
-        self.label_51.setFont(font)
-        self.label_51.setObjectName("label_51")
-        self.gridLayout_2.addWidget(self.label_51, 2, 0, 1, 1)
-        self.ry = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
+        self.label_62.setFont(font)
+        self.label_62.setObjectName("label_62")
+        self.gridLayout_2.addWidget(self.label_62, 8, 0, 1, 1)
+        self.frametype = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_2)
+        self.frametype.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.frametype.setDecimals(0)
+        self.frametype.setMaximum(1.0)
+        self.frametype.setSingleStep(1.0)
+        self.frametype.setProperty("value", 0.0)
+        self.frametype.setObjectName("frametype")
+        self.gridLayout_2.addWidget(self.frametype, 8, 1, 1, 1)
+        self.label_21 = QtWidgets.QLabel(self.tab_5)
+        self.label_21.setGeometry(QtCore.QRect(20, 20, 91, 25))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_21.setFont(font)
+        self.label_21.setObjectName("label_21")
+        self.t_plate = QtWidgets.QLineEdit(self.tab_5)
+        self.t_plate.setGeometry(QtCore.QRect(120, 20, 331, 25))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.t_plate.setFont(font)
+        self.t_plate.setAlignment(QtCore.Qt.AlignCenter)
+        self.t_plate.setObjectName("t_plate")
+        self.label_27 = QtWidgets.QLabel(self.tab_5)
+        self.label_27.setGeometry(QtCore.QRect(20, 60, 91, 25))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_27.setFont(font)
+        self.label_27.setObjectName("label_27")
+        self.bolt_size = QtWidgets.QLineEdit(self.tab_5)
+        self.bolt_size.setGeometry(QtCore.QRect(120, 60, 331, 25))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.bolt_size.setFont(font)
+        self.bolt_size.setAlignment(QtCore.Qt.AlignCenter)
+        self.bolt_size.setObjectName("bolt_size")
+        self.gridLayoutWidget_5 = QtWidgets.QWidget(self.tab_5)
+        self.gridLayoutWidget_5.setGeometry(QtCore.QRect(260, 110, 181, 131))
+        self.gridLayoutWidget_5.setObjectName("gridLayoutWidget_5")
+        self.gridLayout_5 = QtWidgets.QGridLayout(self.gridLayoutWidget_5)
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_5.setObjectName("gridLayout_5")
+        self.label_114 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_114.setMaximumSize(QtCore.QSize(20, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_114.setFont(font)
+        self.label_114.setObjectName("label_114")
+        self.gridLayout_5.addWidget(self.label_114, 1, 0, 1, 1)
+        self.label_108 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_108.setMaximumSize(QtCore.QSize(20, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_108.setFont(font)
+        self.label_108.setObjectName("label_108")
+        self.gridLayout_5.addWidget(self.label_108, 3, 0, 1, 1)
+        self.ry = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_5)
         self.ry.setMaximumSize(QtCore.QSize(100, 16777215))
         self.ry.setDecimals(2)
         self.ry.setMaximum(100000000.0)
         self.ry.setProperty("value", 1.15)
         self.ry.setObjectName("ry")
-        self.gridLayout_2.addWidget(self.ry, 2, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.ry, 3, 1, 1, 1)
+        self.label_110 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_110.setMaximumSize(QtCore.QSize(20, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_110.setFont(font)
+        self.label_110.setObjectName("label_110")
+        self.gridLayout_5.addWidget(self.label_110, 0, 0, 1, 1)
+        self.fu = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.fu.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.fu.setDecimals(0)
+        self.fu.setMaximum(100000000.0)
+        self.fu.setProperty("value", 3700.0)
+        self.fu.setObjectName("fu")
+        self.gridLayout_5.addWidget(self.fu, 1, 1, 1, 1)
+        self.label_112 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_112.setMaximumSize(QtCore.QSize(100, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_112.setFont(font)
+        self.label_112.setObjectName("label_112")
+        self.gridLayout_5.addWidget(self.label_112, 0, 2, 1, 1)
+        self.label_113 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_113.setMaximumSize(QtCore.QSize(100, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_113.setFont(font)
+        self.label_113.setObjectName("label_113")
+        self.gridLayout_5.addWidget(self.label_113, 1, 2, 1, 1)
+        self.fy = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_5)
+        self.fy.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.fy.setToolTip("")
+        self.fy.setDecimals(0)
+        self.fy.setMaximum(100000000.0)
+        self.fy.setProperty("value", 2400.0)
+        self.fy.setObjectName("fy")
+        self.gridLayout_5.addWidget(self.fy, 0, 1, 1, 1)
+        self.label_115 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_115.setMaximumSize(QtCore.QSize(20, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_115.setFont(font)
+        self.label_115.setObjectName("label_115")
+        self.gridLayout_5.addWidget(self.label_115, 2, 0, 1, 1)
+        self._E = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_5)
+        self._E.setMaximumSize(QtCore.QSize(100, 16777215))
+        self._E.setDecimals(0)
+        self._E.setMaximum(100000000.0)
+        self._E.setProperty("value", 2000000.0)
+        self._E.setObjectName("_E")
+        self.gridLayout_5.addWidget(self._E, 2, 1, 1, 1)
+        self.label_116 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_116.setMaximumSize(QtCore.QSize(100, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_116.setFont(font)
+        self.label_116.setObjectName("label_116")
+        self.gridLayout_5.addWidget(self.label_116, 2, 2, 1, 1)
+        self.tipmomentbeam = QtWidgets.QCheckBox(self.tab_5)
+        self.tipmomentbeam.setEnabled(True)
+        self.tipmomentbeam.setGeometry(QtCore.QRect(240, 360, 201, 23))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.tipmomentbeam.setFont(font)
+        self.tipmomentbeam.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.tipmomentbeam.setCheckable(True)
+        self.tipmomentbeam.setChecked(False)
+        self.tipmomentbeam.setObjectName("tipmomentbeam")
         self.tabWidget.addTab(self.tab_5, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -1302,23 +1456,6 @@ class Ui_MainWindow(object):
         self.design_connect_buttom.setFont(font)
         self.design_connect_buttom.setAutoFillBackground(True)
         self.design_connect_buttom.setObjectName("design_connect_buttom")
-        self.t_plate = QtWidgets.QLineEdit(self.tab_2)
-        self.t_plate.setGeometry(QtCore.QRect(40, 240, 401, 25))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.t_plate.setFont(font)
-        self.t_plate.setAlignment(QtCore.Qt.AlignCenter)
-        self.t_plate.setObjectName("t_plate")
-        self.label_21 = QtWidgets.QLabel(self.tab_2)
-        self.label_21.setGeometry(QtCore.QRect(190, 210, 91, 25))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_21.setFont(font)
-        self.label_21.setObjectName("label_21")
         self.label_wfp_design = QtWidgets.QLabel(self.tab_2)
         self.label_wfp_design.setGeometry(QtCore.QRect(30, 410, 421, 21))
         font = QtGui.QFont()
@@ -1327,6 +1464,322 @@ class Ui_MainWindow(object):
         self.label_wfp_design.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_wfp_design.setObjectName("label_wfp_design")
         self.tabWidget.addTab(self.tab_2, "")
+        self.tab_6 = QtWidgets.QWidget()
+        self.tab_6.setObjectName("tab_6")
+        self.horizontalLayoutWidget_3 = QtWidgets.QWidget(self.tab_6)
+        self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(140, 290, 201, 31))
+        self.horizontalLayoutWidget_3.setObjectName("horizontalLayoutWidget_3")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_3)
+        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.manual_wuf = QtWidgets.QRadioButton(self.horizontalLayoutWidget_3)
+        self.manual_wuf.setEnabled(True)
+        self.manual_wuf.setMaximumSize(QtCore.QSize(100, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.manual_wuf.setFont(font)
+        self.manual_wuf.setChecked(True)
+        self.manual_wuf.setObjectName("manual_wuf")
+        self.horizontalLayout_4.addWidget(self.manual_wuf)
+        self.auto1_wuf = QtWidgets.QRadioButton(self.horizontalLayoutWidget_3)
+        self.auto1_wuf.setEnabled(True)
+        self.auto1_wuf.setMaximumSize(QtCore.QSize(110, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.auto1_wuf.setFont(font)
+        self.auto1_wuf.setObjectName("auto1_wuf")
+        self.horizontalLayout_4.addWidget(self.auto1_wuf)
+        self.design_connect_wuf = QtWidgets.QPushButton(self.tab_6)
+        self.design_connect_wuf.setEnabled(True)
+        self.design_connect_wuf.setGeometry(QtCore.QRect(140, 340, 191, 51))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Light, brush)
+        brush = QtGui.QBrush(QtGui.QColor(224, 238, 247))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Midlight, brush)
+        brush = QtGui.QBrush(QtGui.QColor(96, 111, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Dark, brush)
+        brush = QtGui.QBrush(QtGui.QColor(129, 148, 160))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Mid, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.BrightText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Shadow, brush)
+        brush = QtGui.QBrush(QtGui.QColor(224, 238, 247))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.AlternateBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ToolTipBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ToolTipText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Light, brush)
+        brush = QtGui.QBrush(QtGui.QColor(224, 238, 247))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Midlight, brush)
+        brush = QtGui.QBrush(QtGui.QColor(96, 111, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Dark, brush)
+        brush = QtGui.QBrush(QtGui.QColor(129, 148, 160))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Mid, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.BrightText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Shadow, brush)
+        brush = QtGui.QBrush(QtGui.QColor(224, 238, 247))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.AlternateBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ToolTipBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ToolTipText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(96, 111, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Light, brush)
+        brush = QtGui.QBrush(QtGui.QColor(224, 238, 247))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Midlight, brush)
+        brush = QtGui.QBrush(QtGui.QColor(96, 111, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Dark, brush)
+        brush = QtGui.QBrush(QtGui.QColor(129, 148, 160))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Mid, brush)
+        brush = QtGui.QBrush(QtGui.QColor(96, 111, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.BrightText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(96, 111, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Shadow, brush)
+        brush = QtGui.QBrush(QtGui.QColor(193, 222, 240))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.AlternateBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 220))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ToolTipBase, brush)
+        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ToolTipText, brush)
+        self.design_connect_wuf.setPalette(palette)
+        font = QtGui.QFont()
+        font.setPointSize(24)
+        font.setBold(False)
+        font.setWeight(50)
+        self.design_connect_wuf.setFont(font)
+        self.design_connect_wuf.setAutoFillBackground(True)
+        self.design_connect_wuf.setObjectName("design_connect_wuf")
+        self.label_wuf_design = QtWidgets.QLabel(self.tab_6)
+        self.label_wuf_design.setGeometry(QtCore.QRect(30, 410, 421, 21))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_wuf_design.setFont(font)
+        self.label_wuf_design.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_wuf_design.setObjectName("label_wuf_design")
+        self.label_25 = QtWidgets.QLabel(self.tab_6)
+        self.label_25.setGeometry(QtCore.QRect(20, 0, 241, 211))
+        self.label_25.setText("")
+        self.label_25.setPixmap(QtGui.QPixmap("pic/wufw.jpg"))
+        self.label_25.setScaledContents(True)
+        self.label_25.setObjectName("label_25")
+        self.label_26 = QtWidgets.QLabel(self.tab_6)
+        self.label_26.setGeometry(QtCore.QRect(120, 220, 31, 25))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_26.setFont(font)
+        self.label_26.setObjectName("label_26")
+        self.sh_splice = QtWidgets.QDoubleSpinBox(self.tab_6)
+        self.sh_splice.setGeometry(QtCore.QRect(150, 220, 71, 25))
+        self.sh_splice.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.sh_splice.setDecimals(0)
+        self.sh_splice.setMaximum(100000000.0)
+        self.sh_splice.setProperty("value", 80.0)
+        self.sh_splice.setObjectName("sh_splice")
+        self.label_106 = QtWidgets.QLabel(self.tab_6)
+        self.label_106.setGeometry(QtCore.QRect(230, 220, 21, 25))
+        self.label_106.setMaximumSize(QtCore.QSize(100, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_106.setFont(font)
+        self.label_106.setObjectName("label_106")
+        self.horizontalLayoutWidget_6 = QtWidgets.QWidget(self.tab_6)
+        self.horizontalLayoutWidget_6.setGeometry(QtCore.QRect(120, 250, 252, 31))
+        self.horizontalLayoutWidget_6.setObjectName("horizontalLayoutWidget_6")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_6)
+        self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.E8S = QtWidgets.QRadioButton(self.horizontalLayoutWidget_6)
+        self.E8S.setEnabled(True)
+        self.E8S.setMaximumSize(QtCore.QSize(100, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.E8S.setFont(font)
+        self.E8S.setChecked(True)
+        self.E8S.setObjectName("E8S")
+        self.horizontalLayout_6.addWidget(self.E8S)
+        self.E4S = QtWidgets.QRadioButton(self.horizontalLayoutWidget_6)
+        self.E4S.setEnabled(True)
+        self.E4S.setMaximumSize(QtCore.QSize(100, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.E4S.setFont(font)
+        self.E4S.setChecked(False)
+        self.E4S.setObjectName("E4S")
+        self.horizontalLayout_6.addWidget(self.E4S)
+        self.TBplate = QtWidgets.QRadioButton(self.horizontalLayoutWidget_6)
+        self.TBplate.setEnabled(True)
+        self.TBplate.setMaximumSize(QtCore.QSize(110, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.TBplate.setFont(font)
+        self.TBplate.setObjectName("TBplate")
+        self.horizontalLayout_6.addWidget(self.TBplate)
+        self.MNB = QtWidgets.QDoubleSpinBox(self.tab_6)
+        self.MNB.setGeometry(QtCore.QRect(300, 220, 51, 25))
+        self.MNB.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.MNB.setDecimals(0)
+        self.MNB.setMaximum(100000000.0)
+        self.MNB.setSingleStep(2.0)
+        self.MNB.setProperty("value", 8.0)
+        self.MNB.setObjectName("MNB")
+        self.label_46 = QtWidgets.QLabel(self.tab_6)
+        self.label_46.setGeometry(QtCore.QRect(270, 220, 31, 25))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_46.setFont(font)
+        self.label_46.setObjectName("label_46")
+        self.label_28 = QtWidgets.QLabel(self.tab_6)
+        self.label_28.setGeometry(QtCore.QRect(350, 0, 81, 71))
+        self.label_28.setText("")
+        self.label_28.setPixmap(QtGui.QPixmap("pic/e8s.jpg"))
+        self.label_28.setScaledContents(True)
+        self.label_28.setObjectName("label_28")
+        self.label_29 = QtWidgets.QLabel(self.tab_6)
+        self.label_29.setGeometry(QtCore.QRect(350, 70, 81, 71))
+        self.label_29.setText("")
+        self.label_29.setPixmap(QtGui.QPixmap("pic/e4s.jpg"))
+        self.label_29.setScaledContents(True)
+        self.label_29.setObjectName("label_29")
+        self.label_30 = QtWidgets.QLabel(self.tab_6)
+        self.label_30.setGeometry(QtCore.QRect(350, 140, 81, 71))
+        self.label_30.setText("")
+        self.label_30.setPixmap(QtGui.QPixmap("pic/tbplate.jpg"))
+        self.label_30.setScaledContents(True)
+        self.label_30.setObjectName("label_30")
+        self.label_31 = QtWidgets.QLabel(self.tab_6)
+        self.label_31.setGeometry(QtCore.QRect(300, 30, 41, 25))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_31.setFont(font)
+        self.label_31.setObjectName("label_31")
+        self.label_32 = QtWidgets.QLabel(self.tab_6)
+        self.label_32.setGeometry(QtCore.QRect(300, 100, 41, 25))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_32.setFont(font)
+        self.label_32.setObjectName("label_32")
+        self.label_47 = QtWidgets.QLabel(self.tab_6)
+        self.label_47.setGeometry(QtCore.QRect(300, 170, 41, 25))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_47.setFont(font)
+        self.label_47.setObjectName("label_47")
+        self.label_25.raise_()
+        self.horizontalLayoutWidget_3.raise_()
+        self.design_connect_wuf.raise_()
+        self.label_wuf_design.raise_()
+        self.label_26.raise_()
+        self.sh_splice.raise_()
+        self.label_106.raise_()
+        self.horizontalLayoutWidget_6.raise_()
+        self.MNB.raise_()
+        self.label_46.raise_()
+        self.label_28.raise_()
+        self.label_29.raise_()
+        self.label_30.raise_()
+        self.label_31.raise_()
+        self.label_32.raise_()
+        self.label_47.raise_()
+        self.tabWidget.addTab(self.tab_6, "")
         self.conntab.addTab(self.tab, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -1344,13 +1797,13 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.conntab.setCurrentIndex(1)
         self.unit.setCurrentIndex(13)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "PYEtabs"))
-        MainWindow.setStatusTip(_translate("MainWindow", "PYEtabs v 99.3.2                                     telegram : @PYEtabs"))
+        MainWindow.setStatusTip(_translate("MainWindow", "PYEtabs v 1400.0.0                              telegram : @PYEtabs"))
         self.label_2.setText(_translate("MainWindow", "Etabs 2018+"))
         self.aj.setText(_translate("MainWindow", "Aj اصلاح "))
         self.ajdyn.setText(_translate("MainWindow", "بار دینامیکی طیفی"))
@@ -1433,6 +1886,8 @@ class Ui_MainWindow(object):
         self.gap.setToolTip(_translate("MainWindow", "بادخور بین تیر و ستون"))
         self.h_angel.setToolTip(_translate("MainWindow", "زاویه افقی تیر در پلان xy  نسبت به محور x"))
         self.label_23.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#000000;\">a</span></p></body></html>"))
+        self.label_45.setText(_translate("MainWindow", "<html><head/><body><p>HR</p></body></html>"))
+        self.navard.setToolTip(_translate("MainWindow", "تیر ورق صفر - نورد شده یک"))
         self.label_42.setText(_translate("MainWindow", "cm"))
         self.label_44.setText(_translate("MainWindow", "cm"))
         self.label_43.setText(_translate("MainWindow", "cm"))
@@ -1441,32 +1896,66 @@ class Ui_MainWindow(object):
         self.label_58.setText(_translate("MainWindow", "cm"))
         self.label_60.setText(_translate("MainWindow", "deg"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "مقطع تیر"))
-        self.label_22.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">b</span></p></body></html>"))
-        self.label_45.setText(_translate("MainWindow", "Fy"))
-        self.label_46.setText(_translate("MainWindow", "kg/cm2"))
-        self.label_52.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">Fue</span></p></body></html>"))
-        self.label_47.setText(_translate("MainWindow", "Fu"))
-        self.label_48.setText(_translate("MainWindow", "kg/cm2"))
-        self.fueg.setToolTip(_translate("MainWindow", "تنش کششی فلز الکترود برای جوش شیاری"))
+        self.label_105.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">VC</span></p></body></html>"))
         self.label_53.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">FueG</span></p></body></html>"))
-        self.fue.setToolTip(_translate("MainWindow", "تنش کششی فلز الکترود برای جوش گوشه"))
-        self.label_54.setText(_translate("MainWindow", "kg/cm2"))
-        self.label_55.setText(_translate("MainWindow", "kg/cm2"))
+        self.fue.setToolTip(_translate("MainWindow", "تنش کششی فلز الکترود برای جوش گوشه E60 = 4200 , E70 = 4900"))
+        self.fueg.setToolTip(_translate("MainWindow", "تنش کششی فلز الکترود برای جوش شیاری  E60 = 4200 , E70 = 4900"))
+        self.label_61.setText(_translate("MainWindow", "kg/cm2"))
+        self.label_59.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">Fub</span></p></body></html>"))
+        self.fub.setToolTip(_translate("MainWindow", "تنش کششی نهایی پیچ ها"))
         self.betaw.setToolTip(_translate("MainWindow", "جوش در محل بازرسی چشمی 0.75 ، جوش در کارخانه بازرسی چشمی 0.85 ، انجام آزمایش غیر مخرب نظیر رادیوگرافی و اولتراسونیک 1"))
+        self.label_55.setText(_translate("MainWindow", "kg/cm2"))
+        self.label_54.setText(_translate("MainWindow", "kg/cm2"))
         self.label_56.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">Ratio</span></p></body></html>"))
+        self.label_52.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">Fue</span></p></body></html>"))
         self.phikh.setToolTip(_translate("MainWindow", "خطای مجاز جهت طراحی"))
-        self.label_51.setText(_translate("MainWindow", "Ry"))
+        self.label_22.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">b</span></p></body></html>"))
+        self.v_condition.setToolTip(_translate("MainWindow", "پیچ معمولی همه حالات و پیچ پرمقاومت که سطح برش از قسمت دندانه شده بگذرد صفر و پیچ پرمقاومت که سطح برش از قسمت دنده شده نمی گذرد یک"))
+        self.label_62.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#0000ff;\">FT</span></p></body></html>"))
+        self.frametype.setToolTip(_translate("MainWindow", "نوع قاب خمشی : متوسط صفر ، ویژه یک"))
+        self.label_21.setText(_translate("MainWindow", "t _plate  cm"))
+        self.t_plate.setToolTip(_translate("MainWindow", "ضخامت ورق های موجود برای طراحی"))
+        self.t_plate.setText(_translate("MainWindow", "0.8 , 1 , 1.2 , 1.5 , 2 , 2.5 , 3 , 3.5 , 4"))
+        self.label_27.setText(_translate("MainWindow", "bolt size  cm"))
+        self.bolt_size.setToolTip(_translate("MainWindow", "قطر پیچ های موجود برای طراحی"))
+        self.bolt_size.setText(_translate("MainWindow", "1.6 , 2 , 2.2 , 2.4 , 2.7 , 3 , 3.6"))
+        self.label_114.setText(_translate("MainWindow", "Fu"))
+        self.label_108.setText(_translate("MainWindow", "Ry"))
+        self.label_110.setText(_translate("MainWindow", "Fy"))
+        self.label_112.setText(_translate("MainWindow", "kg/cm2"))
+        self.label_113.setText(_translate("MainWindow", "kg/cm2"))
+        self.label_115.setText(_translate("MainWindow", "E"))
+        self.label_116.setText(_translate("MainWindow", "kg/cm2"))
+        self.tipmomentbeam.setToolTip(_translate("MainWindow", "تیپ کردن تیر های خمشی بر اساس بحرانی ترین تیر"))
+        self.tipmomentbeam.setText(_translate("MainWindow", "تیپ کردن تیر های خمشی"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "پارامتر طراحی"))
         self.manual.setText(_translate("MainWindow", "Manual"))
         self.auto1.setText(_translate("MainWindow", "Auto Etabs +18"))
         self.design_connect_buttom.setText(_translate("MainWindow", "شروع"))
-        self.t_plate.setToolTip(_translate("MainWindow", "ضخامت ورق های موجود برای طراحی"))
-        self.t_plate.setText(_translate("MainWindow", "0.8 , 1 , 1.2 , 1.5 , 2 , 2.5 , 3 , 3.5 , 4"))
-        self.label_21.setText(_translate("MainWindow", "t _plate  cm"))
         self.label_wfp_design.setText(_translate("MainWindow", "جهت اجرا دکمه شروع را بزنید"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "WFP"))
+        self.manual_wuf.setText(_translate("MainWindow", "Manual"))
+        self.auto1_wuf.setText(_translate("MainWindow", "Auto Etabs +18"))
+        self.design_connect_wuf.setText(_translate("MainWindow", "شروع"))
+        self.label_wuf_design.setText(_translate("MainWindow", "جهت اجرا دکمه شروع را بزنید"))
+        self.label_26.setText(_translate("MainWindow", "shs "))
+        self.sh_splice.setToolTip(_translate("MainWindow", "محل وصله از بر ستون"))
+        self.label_106.setText(_translate("MainWindow", "cm"))
+        self.E8S.setToolTip(_translate("MainWindow", "وصله هشت پیچ سخت شده"))
+        self.E8S.setText(_translate("MainWindow", "E8S"))
+        self.E4S.setToolTip(_translate("MainWindow", "وصله چهار پیچ سخت شده"))
+        self.E4S.setText(_translate("MainWindow", "E4S"))
+        self.TBplate.setToolTip(_translate("MainWindow", "وصله با ورق بالا و پایین پیچی"))
+        self.TBplate.setText(_translate("MainWindow", "TBplate"))
+        self.MNB.setToolTip(_translate("MainWindow", "حداکثر تعداد پیج ترجیهی در یک وجه اتصال بر روی بال در وصله TB"))
+        self.label_46.setText(_translate("MainWindow", "MNB"))
+        self.label_31.setText(_translate("MainWindow", "E8S"))
+        self.label_32.setText(_translate("MainWindow", "E4S"))
+        self.label_47.setText(_translate("MainWindow", "TB"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), _translate("MainWindow", "WUF_W"))
         self.conntab.setTabText(self.conntab.indexOf(self.tab), _translate("MainWindow", "اتصالات"))
         self.about.setTitle(_translate("MainWindow", "درباره"))
+
 
 
 if __name__ == "__main__":
@@ -2318,128 +2807,21 @@ if __name__ == "__main__":
 
     # ========================wfp
 
-    ui.design_connect_buttom.clicked.connect(lambda: wfp_connection_design())
+    ui.design_connect_buttom.clicked.connect(lambda: wfp_connection_design2())
+
+    def wfp_connection_design2():
+        try:
+            wfp_connection_design()
+            ui.label_wfp_design.setText('عملیات با موفقیت به اتمام رسید')
+        except:
+            ui.label_wfp_design.setText('خطا در اجرای عملیات')
 
 
     def wfp_connection_design():
-        if ui.manual.isChecked():
-            wfp_manual()
-            ui.label_wfp_design.setText('عملیات با موفقیت به اتمام رسید')
-        if ui.auto1.isChecked():
-            try:
-                wfp_auto()
-                ui.label_wfp_design.setText('عملیات با موفقیت به اتمام رسید')
-            except:
-                ui.label_wfp_design.setText('مدل باز شده ایتبس یافت نشد')
-
-
-    def wfp_manual():
-
-        try:
-            tplate = ui.t_plate.text()
-            tplate = list(map(lambda x: float(x), tplate.split(',')))
-            tplate = list(set(tplate))
-        except:
-            pass
-
-        Fy = ui.fy.value()
-        Fu = ui.fu.value()
-        Ry = ui.ry.value()
-        Fue = ui.fue.value()
-        FueG = ui.fueg.value()
-        B = ui.betaw.value()
-        phikh = ui.phikh.value()
-        gap = ui.gap.value()
-        Z = ui.zp.value()
-        d = ui.dtotal.value()
-        bf = ui.bf.value()
-        tf = ui.tf.value()
-        tw = ui.tw.value()
-        Ln = ui.ln.value() * 100
-        Lo = ui.lo.value() * 100
-        dload = ui.dload.value() / 10000
-        alfa = ui.alfa.value()
-        beta = ui.beta.value()
-        sigma = ui.sigma.value()
-        lload = ui.lload.value() / 10000
-        sload = ui.sload.value() / 10000
-        _w = alfa * dload + beta * lload + sigma * sload
-        W = (_w * Lo)
-        bcol = 0
-        h_angel = ui.h_angel.value()
-        beam = {'name': 'beam', 'Z': Z, 'd': d, 'bf': bf, 'tf': tf, 'tw': tw, 'L': Ln, 'W': W}
-
         from connection.WFP import WFP
-        beamconnec = WFP(beam, Fy, Fu, Ry, tplate, bcol, phikh, B, Fue, FueG, gap, h_angel)
-
-        var1 = beamconnec.Report
-        var = var1[0]
-        sumtext = f'''
-gap = {var['gap']} cm
-h_angel = {var['h_angel']} deg
-delta_x = {var['delta_x']} cm
-
-*** PL.A ***
-
-Ratio = {var['Aptop_ratio']}
-
-L = {var['Lptop']} cm
-b =  {var['btop']} cm
-b' = {var['btopb']} cm
-t = {var['ttop']} cm
-x = {var['x']} cm
-y = {var['y']} cm
-aw = {var['awtop']} cm
-
-*** PL.B ***
-
-Ratio = {var['Apbot_ratio']}
-
-L = {var['Lpbot']} cm
-b =  {var['bbot']} cm
-t = {var['tbot']} cm
-aw = {var['awbot']} cm
-
-*** PL.C ***
-
-Ratio = {var['ratio_vplate']}
-Ratio_aw = {var['aw/awmax_vplate_ratio']}
-
-n = {var['n_vplate']} 
-h = {var['h_vplate']} cm
-b = {var['b_vplate']} cm
-t = {var['t_vplate']} cm
-aw = {var['aw_vplate']} cm
-
-*** joint plate ***
-
-t = {var['t_joint_plate']} cm
-
-'''
-
-        filesummary = open('summary.txt', '+w')
-        filesummary.write(sumtext)
-        filesummary.close()
-
-        filesolution = open('solution.txt', '+w')
-
-        filesolution.write('********************\n********************\n')
-        var2 = beamconnec.Solution
-        for i in var2:
-            filesolution.write(i)
-        filesolution.close()
-        WFP.Solution = []
-        WFP.Report = []
-
-
-    def wfp_auto():
-        from connection.WFP import WFP
-        from connection.MomentBeamEtabs import MomentBeam
-        listofmomentbeam = MomentBeam()
-        listofmomentbeam = sorted(listofmomentbeam, key=lambda x: (x['name'], x['story']))
         ignorlist = []
         designlist = []
-
+        # general value
         try:
             tplate = ui.t_plate.text()
             tplate = list(map(lambda x: float(x), tplate.split(',')))
@@ -2447,151 +2829,439 @@ t = {var['t_joint_plate']} cm
         except:
             pass
 
+        try:
+            list_boltsize = ui.bolt_size.text()
+            list_boltsize = list(map(lambda x: float(x), list_boltsize.split(',')))
+            list_boltsize = list(set(list_boltsize))
+        except:
+            pass
         alfa = ui.alfa.value()
+        frametype = ui.frametype.value()
         beta = ui.beta.value()
         sigma = ui.sigma.value()
+        gap = ui.gap.value()
         Fue = ui.fue.value()
         FueG = ui.fueg.value()
+        bolt_Fu = ui.fub.value()
+        v_condition = ui.v_condition.value()
         B = ui.betaw.value()
         phikh = ui.phikh.value()
-        gap = ui.gap.value()
-        bcol = 0
+        sh_splice = ui.sh_splice.value()
+        max_n_bolt = ui.MNB.value()
 
-        for i in listofmomentbeam:
-            name = i['name']
-            Fy = i['Fy']
-            Fu = i['Fu']
-            Ry = i['Ry']
-            Z = i['Z33']
-            d = i['t3']
-            bf = max(i['t2'], i['t2b'])
-            tf = min(i['tf'], i['tfb'])
-            tw = i['tw']
-            h_angel = i['h_angel']
+        # manual value
+        if ui.manual.isChecked():
+            dload = ui.dload.value() / 10000
+            lload = ui.lload.value() / 10000
+            sload = ui.sload.value() / 10000
+            _w = alfa * dload + beta * lload + sigma * sload
+            Ln = ui.ln.value() * 100
+            Lo = ui.lo.value() * 100
+            W = (_w * Lo)
+            bf = ui.bf.value()
+            tf = ui.tf.value()
+            tw = ui.tw.value()
+            d = ui.dtotal.value()
+            Z = ui.zp.value()
+            h_angel = ui.h_angel.value()
+            navard = ui.navard.value()
+            Fy = ui.fy.value()
+            Fu = ui.fu.value()
+            E = ui._E.value()
+            Ry = ui.ry.value()
+            beam = {'name': 'beam', 'Z': Z, 'd': d, 'bf': bf, 'tf': tf, 'tw': tw, 'L': Ln, 'W': W}
+            beamconnec = WFP(beam, Fy, Fu, Ry, tplate, phikh, B, Fue, FueG, gap, h_angel)
 
-            # جدا کردن تیر هایی که مشخصات آنها موجود نیست و سعی بر طراحی از روی اسم آنها
-            if bf == 0 or tf == 0 or d == 0 or tw == 0:
-                try:
-                    name.lower
-                    name2 = name.split('w')
-                    name3 = name2[-1].split('f')
-                    dtw = name3[0].split('x')
-                    d = float(dtw[0])
-                    i['t3'] = d
-                    tw = float(dtw[1])
-                    i['tw'] = tw
-                    bftf = name3[1].split('x')
-                    bf = float(bftf[0])
-                    i['t2'] = i['t2b'] = bf
-                    tf = float(bftf[1])
-                    i['tf'] = i['tfb'] = tf
-                except:
-                    ignorlist.append(i)
-                    continue
+            report = beamconnec.report
+            solution = beamconnec.solu
+            error = beamconnec.error
+            beam['ID'] = 0
+            beam['story'] = 0
+            designlist.append({'beam': beam, 'report': report, 'solution': solution, 'error': error})
 
-            Ln = i['Ln']
-            dload = i['d_sum']
-            lload = i['l_sum']
-            sload = i['s_sum']
-            W = alfa * dload + beta * lload + sigma * sload
-            beam = {'name': name, 'Z': Z, 'd': d, 'bf': bf, 'tf': tf, 'tw': tw, 'L': Ln, 'W': W}
-            beamconnec = WFP(beam, Fy, Fu, Ry, tplate, bcol, phikh, B, Fue, FueG, gap, h_angel)
-            designlist.append(i)
 
-        report = beamconnec.Report
-        solution = beamconnec.Solution
+        # auto value
+        elif ui.auto1.isChecked():
+            from connection.MomentBeamEtabs import MomentBeam
+            listofmomentbeam = MomentBeam()
+            listofmomentbeam = sorted(listofmomentbeam, key=lambda x: (x['name'], x['story']))
+            if ui.tipmomentbeam.isChecked():
+                from connection.TipMomentBeam import TipBeam
+                listofmomentbeam = TipBeam(listofmomentbeam)
 
+            for i in listofmomentbeam:
+                name = i['name']
+                dload = i['d_sum']
+                lload = i['l_sum']
+                sload = i['s_sum']
+                W = alfa * dload + beta * lload + sigma * sload
+                Ln = i['Ln']
+                bf = max(i['t2'], i['t2b'])
+                tf = min(i['tf'], i['tfb'])
+                tw = i['tw']
+                d = i['t3']
+                Z = i['Z33']
+                h_angel = i['h_angel']
+                navardipe = ['IPE100', 'IPE120', 'IPE140', 'IPE160', 'IPE180',
+                             'IPE200', 'IPE220', 'IPE240', 'IPE270',
+                             'IPE300', 'IPE330', 'IPE360',
+                             'IPE400', 'IPE450',
+                             'IPE500', 'IPE550',
+                             'IPE600']
+                if name in navardipe:
+                    navard = 1
+                else:
+                    navard = 0
+                Fy = i['Fy']
+                Fu = i['Fu']
+                E = i['E']
+                Ry = i['Ry']
+
+                # جدا کردن تیر هایی که مشخصات آنها موجود نیست و سعی بر طراحی از روی اسم آنها
+                if bf == 0 or tf == 0 or d == 0 or tw == 0:
+                    try:
+                        name.lower
+                        name2 = name.split('w')
+                        name3 = name2[-1].split('f')
+                        dtw = name3[0].split('x')
+                        d = float(dtw[0])
+                        i['t3'] = d
+                        tw = float(dtw[1])
+                        i['tw'] = tw
+                        bftf = name3[1].split('x')
+                        bf = float(bftf[0])
+                        i['t2'] = i['t2b'] = bf
+                        tf = float(bftf[1])
+                        i['tf'] = i['tfb'] = tf
+                    except:
+                        ignorlist.append(i)
+                        continue
+                beam = {'name': name, 'Z': Z, 'd': d, 'bf': bf, 'tf': tf, 'tw': tw, 'L': Ln, 'W': W}
+
+                # طراحی اتصال
+                beamconnec = WFP(beam, Fy, Fu, Ry, tplate, phikh, B, Fue, FueG, gap, h_angel)
+
+                report = beamconnec.report
+                solution = beamconnec.solu
+                error = beamconnec.error
+                designlist.append({'beam': i, 'report': report, 'solution': solution, 'error': error})
+
+
+        #=== export data
         connectiondatalist = [
-            ['ID', 'Story', 'Name', 'h_angel(deg)', 'delta_x(cm)', 't_joint(cm)', 'PL.A(cm)', 'x - y(cm)', 'PL.B(cm)',
-             'PL.C(cm)'],
-            ['ID', 'Story', 'Name', 'angel', 'delta_x', 'PL t', "PL L x b' x b x t x aw", 'x - y', 'PL L x b x t x aw',
-             'nPL x h x b x t x aw']
-            ]
-        for i in range(len(report)):
-            idname = designlist[i]['ID']
-            xyname = f"{report[i]['x']} - {report[i]['y']}"
-            plafstr = f"PL {report[i]['Lptop']} x {report[i]['btopb']} x {report[i]['btop']} x {report[i]['ttop']} x {report[i]['awtop']}"
-            plbfstr = f"PL {report[i]['Lpbot']} x {report[i]['bbot']} x {report[i]['tbot']} x {report[i]['awbot']}"
-            plcfstr = f"{report[i]['n_vplate']}PL {report[i]['h_vplate']} x {report[i]['b_vplate']} x {report[i]['t_vplate']} x {report[i]['aw_vplate']}"
-            tjointfstr = f"PL {report[i]['t_joint_plate']}"
-            templist = [idname, designlist[i]['story'], report[i]['name'], report[i]['h_angel'], report[i]['delta_x'],
+        ['ok or not', 'ID', 'Story', 'Name', 'h_angel(deg)', 'delta_x(cm)', 't_joint(cm)', 'PL.A(cm)', 'x - y(cm)', 'PL.B(cm)',
+         'PL.C(cm)'],
+        ['ok or not', 'ID', 'Story', 'Name', 'angel', 'delta_x', 'PL t', "PL L x b' x b x t x aw", 'x - y', 'PL L x b x t x aw',
+         'nPL x h x b x t x aw']
+        ]
+
+        for i in designlist:
+            if i['error']:
+                okornot = 'not ok'
+            else:
+                okornot = 'ok'
+
+
+            idname = i['beam']['ID']
+            xyname = f"{i['report']['x']} - {i['report']['y']}"
+            plafstr = f"PL {i['report']['Lptop']} x {i['report']['btopb']} x {i['report']['btop']} x {i['report']['ttop']} x {i['report']['awtop']}"
+            plbfstr = f"PL {i['report']['Lpbot']} x {i['report']['bbot']} x {i['report']['tbot']} x {i['report']['awbot']}"
+            plcfstr = f"{i['report']['n_vplate']} PL {i['report']['h_vplate']} x {i['report']['b_vplate']} x {i['report']['t_vplate']} x {i['report']['aw_vplate']}"
+            tjointfstr = f"PL {i['report']['t_joint_plate']}"
+            templist = [okornot, idname, i['beam']['story'], i['beam']['name'], i['report']['h_angel'], i['report']['delta_x'],
                         tjointfstr, plafstr, xyname, plbfstr, plcfstr]
+
             connectiondatalist.append(templist)
 
-        summaryfile = open('summary.txt', '+w')
-        solutionfile = open('solution.txt', '+w')
-        for i in range(len(report)):
-            sumtext = f'''
-******************
-******************
-******************
-
-{designlist[i]}
-
-name = {report[i]['name']}
-gap = {report[i]['gap']} cm
-h_angel = {report[i]['h_angel']} deg
-delta_x = {report[i]['delta_x']} cm
-
-*** PL.A ***
-
-Ratio = {report[i]['Aptop_ratio']}
-
-L = {report[i]['Lptop']} cm
-b =  {report[i]['btop']} cm
-b' = {report[i]['btopb']} cm
-t = {report[i]['ttop']} cm
-x = {report[i]['x']} cm
-y = {report[i]['y']} cm
-aw = {report[i]['awtop']} 
-
-*** PL.B ***
-
-Ratio = {report[i]['Apbot_ratio']}
-
-L = {report[i]['Lpbot']} cm
-b =  {report[i]['bbot']} cm
-t = {report[i]['tbot']} cm
-aw = {report[i]['awbot']} 
-
-*** PL.C ***
-
-Ratio = {report[i]['ratio_vplate']}
-Ratio_aw = {report[i]['aw/awmax_vplate_ratio']}
-
-n = {report[i]['n_vplate']}
-h = {report[i]['h_vplate']} cm
-b = {report[i]['b_vplate']} cm
-t = {report[i]['t_vplate']} cm
-aw = {report[i]['aw_vplate']} 
-
-*** joint plate ***
-
-t = {report[i]['t_joint_plate']}
-
-
-'''
-
-            summaryfile.write(sumtext)
-        for s in ignorlist:
-            summaryfile.writelines(f'undesign beams = {s}\n')
-
-        for i in solution:
-            indexvar = solution.index(i)
-            solutionfile.write('*******************************************************************\n')
-            solutionfile.write(f'{designlist[indexvar]}\n')
-            solutionfile.write('*******************************************************************\n')
-            solutionfile.write(i)
-        solutionfile.close()
-        summaryfile.close()
+        # printout put
         wfp_docx_export(connectiondatalist)
-        WFP.Solution = []
-        WFP.Report = []
+        soldata = ''
+        for i in designlist:
+            soldata += f'{i["beam"]}\n' + i['solution']
+        wfp_docx_export_solo(soldata)
+
+        errortext = open('WFP_ErrorList.txt', '+w')
+
+        for i in designlist:
+            if i['error']:
+                errortext.write(f"{i['beam']}\n\n")
+                for j in i['error']:
+                    errortext.write(f"{j}\n\n")
+                errortext.write('\n\n\n\n')
+
+        for i in ignorlist:
+            errortext.write('undesign beam:\n\n')
+            errortext.write(f'{i}\n')
+
+        errortext.close()
 
 
     def wfp_docx_export(connectiondatalist):
         from connection.docexport import connection_export as expo
-        expo(connectiondatalist, 'لیست اتصالات گیردار:( WFP )', 'connection')
+        expo(connectiondatalist, 'لیست اتصالات گیردار:( WFP )', 'WFP_connection')
+
+
+    def wfp_docx_export_solo(soldata):
+        from connection.docexportsolution import connection_export_solution as expo2
+        expo2(soldata, 'WFP_solution')
+
+
+
+
+
+    #==================== WUF_W
+
+    ui.design_connect_wuf.clicked.connect(lambda: wuf_connection_design2())
+
+    def wuf_connection_design2():
+        try:
+            wuf_connection_design()
+            ui.label_wuf_design.setText('عملیات با موفقیت به اتمام رسید')
+        except:
+            ui.label_wuf_design.setText('خطا در اجرای عملیات')
+
+
+    def wuf_connection_design():
+        from connection.WUF_W import E8S_SPLICE, E4S_SPLICE, TBplate_SPLICE
+        ignorlist = []
+        designlist = []
+        # general value
+        try:
+            tplate = ui.t_plate.text()
+            tplate = list(map(lambda x: float(x), tplate.split(',')))
+            tplate = list(set(tplate))
+        except:
+            pass
+
+        try:
+            list_boltsize = ui.bolt_size.text()
+            list_boltsize = list(map(lambda x: float(x), list_boltsize.split(',')))
+            list_boltsize = list(set(list_boltsize))
+        except:
+            pass
+        alfa = ui.alfa.value()
+        frametype = ui.frametype.value()
+        beta = ui.beta.value()
+        sigma = ui.sigma.value()
+        gap = ui.gap.value()
+        Fue = ui.fue.value()
+        FueG = ui.fueg.value()
+        bolt_Fu = ui.fub.value()
+        v_condition = ui.v_condition.value()
+        B = ui.betaw.value()
+        phikh = ui.phikh.value()
+        sh_splice = ui.sh_splice.value()
+        max_n_bolt = ui.MNB.value()
+
+        # manual value
+        if ui.manual_wuf.isChecked():
+            dload = ui.dload.value() / 10000
+            lload = ui.lload.value() / 10000
+            sload = ui.sload.value() / 10000
+            _w = alfa * dload + beta * lload + sigma * sload
+            Ln = ui.ln.value() * 100
+            Lo = ui.lo.value() * 100
+            W = (_w * Lo)
+            bf = ui.bf.value()
+            tf = ui.tf.value()
+            tw = ui.tw.value()
+            d = ui.dtotal.value()
+            Z = ui.zp.value()
+            h_angel = ui.h_angel.value()
+            navard = ui.navard.value()
+            Fy = ui.fy.value()
+            Fu = ui.fu.value()
+            E = ui._E.value()
+            Ry = ui.ry.value()
+            beam = {'name': 'beam', 'Z': Z, 'd': d, 'bf': bf, 'tf': tf, 'tw': tw, 'L': Ln, 'W': W}
+            if ui.E8S.isChecked():
+                beamconnec = E8S_SPLICE(beam, Fy, Fu, Ry, tplate, phikh, h_angel, frametype, E, navard, bolt_Fu, list_boltsize, v_condition, sh_splice)
+            elif ui.E4S.isChecked():
+                beamconnec = E4S_SPLICE(beam, Fy, Fu, Ry, tplate, phikh, h_angel, frametype, E, navard, bolt_Fu, list_boltsize, v_condition, sh_splice)
+            elif ui.TBplate.isChecked():
+                beamconnec = TBplate_SPLICE(beam, Fy, Fu, Ry, tplate, phikh, h_angel, frametype, E, navard, bolt_Fu, list_boltsize, v_condition, sh_splice, gap, max_n_bolt)
+            else:
+                pass
+
+            report = beamconnec.report
+            solution = beamconnec.solu
+            error = beamconnec.error
+            beam['ID'] = 0
+            beam['story'] = 0
+            designlist.append({'beam': beam, 'report': report, 'solution': solution, 'error': error})
+
+
+        # auto value
+        elif ui.auto1_wuf.isChecked():
+            from connection.MomentBeamEtabs import MomentBeam
+            listofmomentbeam = MomentBeam()
+            listofmomentbeam = sorted(listofmomentbeam, key=lambda x: (x['name'], x['story']))
+            if ui.tipmomentbeam.isChecked():
+                from connection.TipMomentBeam import TipBeam
+                listofmomentbeam = TipBeam(listofmomentbeam)
+
+            for i in listofmomentbeam:
+                name = i['name']
+                dload = i['d_sum']
+                lload = i['l_sum']
+                sload = i['s_sum']
+                W = alfa * dload + beta * lload + sigma * sload
+                Ln = i['Ln']
+                bf = max(i['t2'], i['t2b'])
+                tf = min(i['tf'], i['tfb'])
+                tw = i['tw']
+                d = i['t3']
+                Z = i['Z33']
+                h_angel = i['h_angel']
+                navardipe = ['IPE100', 'IPE120', 'IPE140', 'IPE160', 'IPE180',
+                             'IPE200', 'IPE220', 'IPE240', 'IPE270',
+                             'IPE300', 'IPE330', 'IPE360',
+                             'IPE400', 'IPE450',
+                             'IPE500', 'IPE550',
+                             'IPE600']
+                if name in navardipe:
+                    navard = 1
+                else:
+                    navard = 0
+                Fy = i['Fy']
+                Fu = i['Fu']
+                E = i['E']
+                Ry = i['Ry']
+
+                # جدا کردن تیر هایی که مشخصات آنها موجود نیست و سعی بر طراحی از روی اسم آنها
+                if bf == 0 or tf == 0 or d == 0 or tw == 0:
+                    try:
+                        name.lower
+                        name2 = name.split('w')
+                        name3 = name2[-1].split('f')
+                        dtw = name3[0].split('x')
+                        d = float(dtw[0])
+                        i['t3'] = d
+                        tw = float(dtw[1])
+                        i['tw'] = tw
+                        bftf = name3[1].split('x')
+                        bf = float(bftf[0])
+                        i['t2'] = i['t2b'] = bf
+                        tf = float(bftf[1])
+                        i['tf'] = i['tfb'] = tf
+                    except:
+                        ignorlist.append(i)
+                        continue
+                beam = {'name': name, 'Z': Z, 'd': d, 'bf': bf, 'tf': tf, 'tw': tw, 'L': Ln, 'W': W}
+
+                # طراحی اتصال
+                if ui.E8S.isChecked():
+                    beamconnec = E8S_SPLICE(beam, Fy, Fu, Ry, tplate, phikh, h_angel, frametype, E, navard, bolt_Fu, list_boltsize, v_condition, sh_splice)
+                elif ui.E4S.isChecked():
+                    beamconnec = E4S_SPLICE(beam, Fy, Fu, Ry, tplate, phikh, h_angel, frametype, E, navard, bolt_Fu, list_boltsize, v_condition, sh_splice)
+                elif ui.TBplate.isChecked():
+                    beamconnec = TBplate_SPLICE(beam, Fy, Fu, Ry, tplate, phikh, h_angel, frametype, E, navard, bolt_Fu, list_boltsize, v_condition, sh_splice, gap, max_n_bolt)
+                else:
+                    pass
+
+                report = beamconnec.report
+                solution = beamconnec.solu
+                error = beamconnec.error
+                designlist.append({'beam': i, 'report': report, 'solution': solution, 'error': error})
+
+
+        #=== export data
+        if ui.E8S.isChecked():
+            connectiondatalist = [
+            ['ok or not', 'ID', 'Story', 'Name', 'h_angel(deg)', 'delta_x(cm)', 't_joint(cm)', 'WUF_W', 'PL.C1(cm)', 'x - y(cm)', 'L1(cm)', 'h1(cm)',
+             'E8S', 'shs(cm)', 'PL.A(cm)', 'NumberOfBolts', 'BoltSize(cm)','HoleSize(cm)', 'g(cm)', 'ed(cm)', 'de(cm)', 'pb(cm)', 'pfo(cm)', 'tbf(cm)', 'pfi(cm)', 'tbw(cm)',
+                               'PL.B(cm)'],
+            ['ok or not', 'ID', 'Story', 'Name', 'angel', 'delta_x', 'PL t', 'WUF_W', "PL h x b x t x aw", 'x - y', 'L1', 'h1',
+             'E8S', 'shs(cm)', 'PL h x b x t','NumberOfBolts','Bolt','Hole', 'g', 'ed', 'de', 'pb', 'pfo', 'tbf', 'pfi', 'tbw',
+                               'PL Lst x hst x t']
+            ]
+            for i in designlist:
+                if i['error']:
+                    okornot = 'not ok'
+                else:
+                    okornot = 'ok'
+
+                templist = [okornot, i['beam']['ID'], i['beam']['story'], i['beam']['name'], i['report']['h_angel'], i['report']['delta_x'], i['report']['joint_pl'], 'WUF_W', f'PL {i["report"]["wuf_vplate_hp"]} x {i["report"]["wuf_vplate_bp"]} x {i["report"]["wuf_vplate_tp"]} x {i["report"]["wuf_vplate_aw"]}', f'{i["report"]["x"]} - {i["report"]["y"]}', i["report"]["l1"], i["report"]["h1"],
+                            'E8S', i["report"]["sh_splice"], f'PL {i["report"]["f_hp"]} x {i["report"]["f_bp"]} x {i["report"]["f_tp"]}', i["report"]["bolt_n"], i["report"]["bolt_db"], i["report"]["holesize"], i["report"]["f_g"], i["report"]["edge_dis"], i["report"]["f_de"], i["report"]["f_pb"], i["report"]["f_pfo"], i["beam"]["tf"], i["report"]["f_pfi"], i["beam"]["tw"],
+                            f'PL {i["report"]["stif_lst"]} x {i["report"]["stif_hst"]} x {i["report"]["stif_ts"]}']
+                connectiondatalist.append(templist)
+
+        elif ui.E4S.isChecked():
+            connectiondatalist = [
+            ['ok or not', 'ID', 'Story', 'Name', 'h_angel(deg)', 'delta_x(cm)', 't_joint(cm)', 'WUF_W', 'PL.C1(cm)', 'x - y(cm)', 'L1(cm)', 'h1(cm)',
+             'E4S', 'shs(cm)', 'PL.A(cm)', 'NumberOfBolts', 'BoltSize(cm)','HoleSize(cm)', 'g(cm)', 'ed(cm)', 'de(cm)', 'pfo(cm)', 'tbf(cm)', 'pfi(cm)', 'tbw(cm)',
+                               'PL.B(cm)'],
+            ['ok or not', 'ID', 'Story', 'Name', 'angel', 'delta_x', 'PL t', 'WUF_W', "PL h x b x t x aw", 'x - y', 'L1', 'h1',
+             'E4S', 'shs(cm)', 'PL h x b x t','NumberOfBolts','Bolt','Hole', 'g', 'ed', 'de', 'pfo', 'tbf', 'pfi', 'tbw',
+                               'PL Lst x hst x t']
+            ]
+            for i in designlist:
+                if i['error']:
+                    okornot = 'not ok'
+                else:
+                    okornot = 'ok'
+
+                templist = [okornot, i['beam']['ID'], i['beam']['story'], i['beam']['name'], i['report']['h_angel'], i['report']['delta_x'], i['report']['joint_pl'], 'WUF_W', f'PL {i["report"]["wuf_vplate_hp"]} x {i["report"]["wuf_vplate_bp"]} x {i["report"]["wuf_vplate_tp"]} x {i["report"]["wuf_vplate_aw"]}', f'{i["report"]["x"]} - {i["report"]["y"]}', i["report"]["l1"], i["report"]["h1"],
+                            'E4S', i["report"]["sh_splice"], f'PL {i["report"]["f_hp"]} x {i["report"]["f_bp"]} x {i["report"]["f_tp"]}', i["report"]["bolt_n"], i["report"]["bolt_db"], i["report"]["holesize"], i["report"]["f_g"], i["report"]["edge_dis"], i["report"]["f_de"], i["report"]["f_pfo"], i["beam"]["tf"], i["report"]["f_pfi"], i["beam"]["tw"],
+                            f'PL {i["report"]["stif_lst"]} x {i["report"]["stif_hst"]} x {i["report"]["stif_ts"]}']
+                connectiondatalist.append(templist)
+
+        elif ui.TBplate.isChecked():
+            connectiondatalist = [
+            ['ok or not', 'ID', 'Story', 'Name', 'h_angel(deg)', 'delta_x(cm)', 't_joint(cm)', 'WUF_W', 'PL.C1(cm)', 'x - y(cm)', 'L1(cm)', 'h1(cm)',
+             'TBplate', 'shs(cm)', 'PL.A(cm)', 'NumberOfBolts', 'BoltSize(cm)', 'HoleSize(cm)', 'g(cm)', 'ed(cm)', 'de(cm)', 'pb(cm)', 'gap(cm)',
+                                   'PL.B(cm)', 'NumberOfBolts', 'BoltSize(cm)', 'HoleSize(cm)', 'ed(cm)', 'de(cm)', 'pb(cm)', 'gap(cm)',
+                                   'PL.C2(cm)', 'NumberOfBolts', 'BoltSize(cm)', 'HoleSize(cm)', 'Nc', 'Nr', 'xde(cm)', 'xpb(cm)', 'gap(cm)', 'yde(cm)', 'ypb(cm)'],
+            ['ok or not', 'ID', 'Story', 'Name', 'angel', 'delta_x', 'PL t', 'WUF_W', "PL h x b x t x aw", 'x - y', 'L1', 'h1',
+             'TBplate', 'shs(cm)', 'PL L x b x t' ,'NumberOfBolts', 'Bolt', 'Hole', 'g', 'ed', 'de', 'pb', 'gap',
+                                   'PL L x b x t', 'NumberOfBolts', 'Bolt', 'Hole', 'ed', 'de', 'pb', 'gap',
+                                   'n PL L x h x t', 'NumberOfBolts', 'Bolt', 'Hole', 'Nc', 'Nr', 'xde', 'xpb', 'gap', 'yde', 'ypb']
+            ]
+
+            for i in designlist:
+                if i['error']:
+                    okornot = 'not ok'
+                else:
+                    okornot = 'ok'
+
+                templist = [okornot, i['beam']['ID'], i['beam']['story'], i['beam']['name'], i['report']['h_angel'], i['report']['delta_x'], i['report']['joint_pl'], 'WUF_W', f'PL {i["report"]["wuf_vplate_hp"]} x {i["report"]["wuf_vplate_bp"]} x {i["report"]["wuf_vplate_tp"]} x {i["report"]["wuf_vplate_aw"]}', f'{i["report"]["x"]} - {i["report"]["y"]}', i["report"]["l1"], i["report"]["h1"],
+                            'TBplate', i["report"]["sh_splice"], f'PL {i["report"]["f_l"]} x {i["report"]["f_b"]} x {i["report"]["f_tp"]}', 2*i["report"]["f_bolt_n"], i["report"]["f_bolt_db"], i["report"]["holesize"], i["report"]["f_g"], i["report"]["edge_dis"], i["report"]["f_de"], i["report"]["f_pb"], gap,
+                                                                 f'PL {i["report"]["f_l"]} x {round(i["report"]["edge_dis"]*2,1)} x {i["report"]["f_tp"]}', i["report"]["f_bolt_n"], i["report"]["f_bolt_db"], i["report"]["holesize"], i["report"]["edge_dis"], i["report"]["f_de"], i["report"]["f_pb"], gap,
+                                                                 f'{i["report"]["ns2"]} PL {i["report"]["vplate_l"]} x {i["report"]["vplate_h"]} x {i["report"]["vplate_tp"]}', 2*i["report"]["v_bolt_n"], i["report"]["v_bolt_db"], i["report"]["holesize"], 2*i["report"]["v_bolt_col"], i["report"]["v_bolt_row"], i["report"]["v_xde"], i["report"]["v_xpb"], gap, i["report"]["v_yde"], i["report"]["v_ypb"]
+                            ]
+                connectiondatalist.append(templist)
+
+        # printout put
+        wuf_w_docx_export(connectiondatalist)
+
+        soldata = ''
+        for i in designlist:
+            soldata += f'{i["beam"]}\n' + i['solution']
+        wuf_w_docx_export_solo(soldata)
+
+
+        errortext = open('WUF_W_ErrorList.txt', '+w' )
+        for i in designlist:
+            if i['error']:
+                errortext.write(f"{i['beam']}\n\n")
+                for j in i['error']:
+                    errortext.write(f"{j}\n\n")
+                errortext.write('\n\n\n\n')
+        for i in ignorlist:
+            errortext.write('undesign beam:\n\n')
+            errortext.write(f'{i}\n')
+
+        errortext.close()
+
+
+    def wuf_w_docx_export(connectiondatalist):
+        from connection.docexport import connection_export as expo
+        expo(connectiondatalist, 'لیست اتصالات گیردار:( WUF_W )', 'WUF_W_connection')
+
+    def wuf_w_docx_export_solo(soldata):
+        from connection.docexportsolution import connection_export_solution as expo2
+        expo2(soldata, 'WUF_W_solution')
+
 
 
     sys.exit(app.exec_())

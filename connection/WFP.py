@@ -14,11 +14,11 @@ class WFP:
         Fue = 4200 # E60 s156 aeenname mahdoodiat estefade
         hangel = degree of horenzital angel in xy plan
         """
-    Report = []
-    Solution = []
 
-    def __init__(self, beam, Fy, Fu, Ry, tplate, bcol, phikh, B, Fue, FueG, gap, hangel):
-
+    def __init__(self, beam, Fy, Fu, Ry, tplate, phikh, B, Fue, FueG, gap, hangel):
+        self.report = {}
+        self.solu = ''
+        self.error = []
         self.hangel = hangel
         self.delta_x = 0
         self.FueG = FueG
@@ -26,7 +26,6 @@ class WFP:
         self.phikh = phikh
         self.B = B
         self.Fue = Fue
-        self.bcol = bcol
         self.treport = {}
         self.beam = beam
         self.tplate = tplate
@@ -64,6 +63,18 @@ class WFP:
         
         # run design
         WFP.Design(self)
+
+
+
+    def beam_control(self):
+        if self.beam['d'] > 90:
+            self.error.append(f'd of beam = {self.beam["d"]} cm must <= 90 cm')
+
+        if self.beam['tf'] > 3:
+            self.error.append(f'tf of beam = {self.beam["tf"]} cm must <= 3 cm')
+
+        if self.beam['L'] / self.beam['d'] < 5:
+            self.error.append(f'L / d of beam = {self.beam["L"] / self.beam["d"]}  must >= 5 cm')
 
     # awmin
     def aw_min(self, t1, t2):
@@ -246,15 +257,29 @@ class WFP:
             # self.Lpbot += self.delta_x
 
 
+    def error_report(self):
+        if self.Aptopr > self.phikh:
+            self.error.append(f'Ratio of PL.A = {self.Aptopr} must <= {self.phikh} , increase t of available plate')
 
-    def connection_report(self):
-        self.rep = {'name': self.beam['name'], 'd': self.beam['d'], 'bf': self.beam['bf'], 'tf': self.beam['tf'], 'tw': self.beam['tw'], 'gap': self.gap,
+        if self.Apbotr > self.phikh:
+            self.error.append(f'Ratio of PL.B = {self.Apbotr} must <= {self.phikh} , increase t of available plate')
+
+        if self.rvplate > self.phikh:
+            self.error.append(f'Ratio of PL.C = {self.rvplate} must <= {self.phikh} , increase t of available plate')
+
+        if self.awv_ratio > self.phikh:
+            self.error.append(f'Ratio of aw PL.C = {self.awv_ratio} must <= {self.phikh} , increase t of available plate')
+
+
+
+    def wfp_report(self):
+        self.report = {'name': self.beam['name'], 'd': self.beam['d'], 'bf': self.beam['bf'], 'tf': self.beam['tf'], 'tw': self.beam['tw'], 'gap': self.gap,
                     'btop': self.btop, 'btopb': self.btopb, 'ttop': self.ttop, 'Latap': self.Latop, 'awtop': self.awtop,
                     'Lptop': self.Lptop, 'x': self.x, 'y': self.y, 'Aptop_ratio': self.Aptopr,
                     'bbot': self.bbot, 'tbot': self.tbot, 'Labot': self.Labot, 'Lpbot': self.Lpbot, 'awbot': self.awbot, 'Apbot_ratio': self.Apbotr,
                     'h_vplate': self.hp, 'b_vplate': self.bp, 'n_vplate': self.np, 't_vplate': self.tp, 'ratio_vplate': self.rvplate,
                     'aw_vplate': self.awv, 'aw/awmax_vplate_ratio': self.awv_ratio, 't_joint_plate': self.join_pl, 'h_angel': self.hangel, 'delta_x': self.delta_x}
-        WFP.Report.append(self.rep)
+
 
 
         self.solu = f'''******
@@ -331,15 +356,14 @@ aw = fr / fw = {round(self.awv,1)}
 aw_max = min(tp - 0.2, min(tp, tw)) = {round(self.awv_max_u,1)}
 Ratio = aw / aw_max = {round(self.awv_ratio,2)}
    
+   
+
+
 '''
-
-        self.solu.encode('utf-8')
-        WFP.Solution.append(self.solu)
-
-
 
 
     def Design(self):
+        WFP.beam_control(self)
         WFP.Design_Top_Bot_Plate(self)
         WFP.Control_Top_Bot_Plate(self)
         WFP.Design_Vplate(self)
@@ -348,17 +372,16 @@ Ratio = aw / aw_max = {round(self.awv_ratio,2)}
         WFP.Control_aw_vplate(self)
         WFP.joint_plate(self)
         WFP.beam_with_hangel(self)
-        WFP.connection_report(self)
+        WFP.error_report(self)
+        WFP.wfp_report(self)
 
 
 if __name__ == '__main__':
     beam1 = {'name': 'PG', 'Z': 858.75, 'd': 39.5, 'bf': 15, 'tf': 1, 'tw': 0.8, 'L': 300, 'W': 21.465}
     beam2 = {'name': 'ipe270', 'Z': 484, 'd': 27, 'bf': 13.5, 'tf': 1.02, 'tw': 0.66, 'L': 600, 'W': 54}
     beam3 = {'name': 'PG', 'Z': 3620, 'd': 54, 'bf': 30, 'tf': 2, 'tw': 0.8, 'L': 760, 'W': 25.68}
-    beam = [beam1, beam2, beam3]
     phikh = 1
     gap = 2
-    bcol = 0
     Fy = 2400  # kg/cm2
     Fu = 3700  # kg/cm2
     Ry = 1.15  # 1.15 or 1.2 or 1.25
@@ -367,20 +390,10 @@ if __name__ == '__main__':
     Fue = 4200  # kg/cm2 E60
     FueG = 4900  # kg/cm2 E70
     hangel = 20 # degree
-    for item in beam:
-        beamconnec = WFP(item, Fy, Fu, Ry, tplate, bcol, phikh, B, Fue, FueG, gap, hangel)
+    beamconnec = WFP(beam3, Fy, Fu, Ry, tplate, phikh, B, Fue, FueG, gap, hangel)
 
-    var = beamconnec.Report
-    for i in var:
-        print('********************\n********************')
-        for j in i:
-            print(j, ':', i[j])
+    for i in beamconnec.__dict__:
+        print(i, ' = ', beamconnec.__dict__[i])
 
 
-    var2 = beamconnec.Solution
-    file = open('test.txt', '+w')
-    for i in var2:
-        print(i)
-        file.write(i)
-    file.close()
 
